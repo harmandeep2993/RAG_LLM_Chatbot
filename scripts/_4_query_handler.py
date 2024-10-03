@@ -40,53 +40,59 @@ def load_chunks(chunk_dir=CHUNK_DATA_PATH):
                 chunks.extend(sentences)  # Add sentences as chunks
     return chunks
 
-def retrieve_top_k_chunks(query, index, chunks, k=5, distance_threshold=40.0):
+def retrieve_top_k_chunks(query, index, chunks, k=5, distance_threshold=30.0):  # Adjust threshold here
     """
-    Retrieves the top-k most relevant chunks from the FAISS index based on the user query.
+    Retrieves the top-k most relevant chunks from the FAISS index based on the query.
     """
-    # Step 1: Embed the user query
     query_embedding = embedder.encode([query], convert_to_numpy=True)
-    
-    # Step 2: Search the FAISS index for the top-k closest embeddings
     distances, indices = index.search(query_embedding, k)
     
-    # Step 3: Retrieve the corresponding chunks, filtered by distance
     top_chunks = []
     for i, distance in enumerate(distances[0]):
-        if distance < distance_threshold:
-            top_chunks.append(chunks[indices[0][i]])  # Only keep chunks within threshold
+        if distance < distance_threshold:  # Adjusted for stricter filtering
+            top_chunks.append(chunks[indices[0][i]])
     
     return top_chunks
 
 def filter_relevant_chunks(query, chunks):
     """
-    Filters chunks to keep only those that are most relevant to the query based on keyword matching.
+    Filters the chunks to keep only those that are most relevant to the query.
     """
-    query_keywords = set(query.lower().split())  # Split the query into keywords
-    filtered_chunks = [chunk for chunk in chunks if query_keywords.intersection(set(chunk.lower().split()))]
+    query_keywords = set(query.lower().split())
+    ranked_chunks = []
+
+    for chunk in chunks:
+        chunk_keywords = set(chunk.lower().split())
+        match_count = len(query_keywords.intersection(chunk_keywords))
+        ranked_chunks.append((chunk, match_count))
+
+    # Sort by the number of keyword matches (highest first)
+    ranked_chunks.sort(key=lambda x: x[1], reverse=True)
     
-    # If no chunks match, return the original FAISS results
-    return filtered_chunks if filtered_chunks else chunks
+    # Return only chunks with highest matches, or all if no matches
+    if ranked_chunks and ranked_chunks[0][1] > 0:
+        return [chunk[0] for chunk in ranked_chunks if chunk[1] > 0]
+    
+    return chunks  # Default to returning all chunks if no match found
 
 def generate_response(query, context_chunks):
     """
-    Generates a response using the FLAN-T5 model based on the provided context.
+    Generates a response to the user's query using FLAN-T5 with provided context.
     """
     if not context_chunks:
         return "Sorry, I don't have information about that. Please ask another question."
+
+    # Use more chunks to provide better context for the response generation
+    context = " ".join(context_chunks[:3])  # Use top 3 relevant chunks for more context
     
-    # Use the top 2 relevant chunks for more context
-    context = " ".join(context_chunks[:2])
-    
-    # Prepare the input prompt for the language model
     input_text = f"Here is some context: {context} Now answer the query: {query}"
 
-    # Tokenize the input and generate a response using the FLAN-T5 model
     inputs = tokenizer(input_text, return_tensors="pt", max_length=512, truncation=True)
     outputs = model.generate(**inputs, max_length=200)
     
-    # Decode and return the generated response
-    return tokenizer.decode(outputs[0], skip_special_tokens=True)
+    response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    return response
+
 
 if __name__ == "__main__":
     # Step 1: Load the FAISS index and text chunks

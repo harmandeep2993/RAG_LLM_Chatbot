@@ -19,31 +19,19 @@ def keyword_match(query, chunk):
     return bool(query_keywords.intersection(chunk_keywords))
 
 def get_helpbee_response(query):
-    """
-    Get the Helpbee chatbot response for the user query by interacting with the query handler.
+    top_chunks = retrieve_top_k_chunks(query, index, text_chunks, k=3)
     
-    Args:
-        query (str): The user's query.
-        
-    Returns:
-        str: Helpbee's response or a fallback message if the query is out of scope.
-    """
-    # Step 1: Retrieve top chunks and distances
-    top_chunks, distances = retrieve_top_k_chunks(query, index, text_chunks, k=3, return_distances=True)
+    # Debugging: Print the retrieved chunks
+    print("Retrieved Chunks:")
+    for chunk in top_chunks:
+        print(chunk)
 
-    # Step 2: Check if the best match is within the confidence threshold
-    if distances[0] < CONFIDENCE_THRESHOLD:
-        relevant_chunks = filter_relevant_chunks(query, top_chunks)
-
-        # Step 3: If there are relevant chunks, generate a response
-        if relevant_chunks:
-            response = generate_response(query, relevant_chunks)
-        else:
-            # No relevant chunks found, return fallback response
-            response = "Sorry, I don't have information about that. Please ask another question."
+    relevant_chunks = filter_relevant_chunks(query, top_chunks)
+    
+    if relevant_chunks:
+        response = generate_response(query, relevant_chunks)
     else:
-        # Distance too high, meaning no good match in the knowledge base
-        response = "Sorry, I couldn't find any relevant information for your query. Please try rephrasing or asking a different question."
+        response = "Sorry, I don't have information about that. Please ask another question."
 
     return response
 
