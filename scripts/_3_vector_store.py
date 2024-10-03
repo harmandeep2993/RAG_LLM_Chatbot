@@ -73,15 +73,25 @@ def save_faiss_index(index, index_path=VECTOR_STORE_PATH):
 
 if __name__ == "__main__":
     # Step 1: Load the text chunks
-    text_chunks = load_chunks()
+    try:
+        text_chunks = load_chunks()
+        print(f"Loaded {len(text_chunks)} chunks.")
+    except Exception as e:
+        print(f"Error loading chunks: {e}")
+        exit()
 
     # Step 2: Create embeddings for the chunks
-    embeddings = create_embeddings(text_chunks)
+    try:
+        embeddings = create_embeddings(text_chunks)
+        print(f"Created embeddings of shape: {embeddings.shape}")
+    except Exception as e:
+        print(f"Error creating embeddings: {e}")
+        exit()
     
     # Step 3: Create a FAISS index from the embeddings
-    index = create_faiss_index(embeddings)
-    
-    # Step 4: Save the FAISS index to the vector_store directory
-    save_faiss_index(index)
-    
-    print(f"FAISS index created and saved at {VECTOR_STORE_PATH}")
+    try:
+        index = create_faiss_index(embeddings)
+        save_faiss_index(index)
+        print(f"FAISS index created and saved at {VECTOR_STORE_PATH}")
+    except Exception as e:
+        print(f"Error creating or saving FAISS index: {e}")

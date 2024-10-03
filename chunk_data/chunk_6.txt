@@ -1,1 +1,2 @@
-Shipping times vary depending on the destination and the shipping method chosen. Standard shipping usually takes 3-5 business days, while express shipping can take 1-2 business days. 
+Shipping times vary depending on the destination and the shipping method chosen. Standard
+shipping usually takes 3-5 business days, while express shipping can take 1-2 business days.

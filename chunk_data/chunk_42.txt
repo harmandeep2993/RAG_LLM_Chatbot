@@ -1,1 +1,2 @@
-Yes, you can place an order with a mix of pre-order and in-stock items. However, please note that the entire order will be shipped once all items are available. 
+Yes, you can place an order with a mix of pre-order and in-stock items. However, please note that the
+entire order will be shipped once all items are available.

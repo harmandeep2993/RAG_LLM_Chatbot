@@ -1,1 +1,2 @@
-If a product is listed as 'pre-order' and available for backorder, you can place an order to secure your item. The product will be shipped once it becomes available. 
+If a product is listed as 'pre-order' and available for backorder, you can place an order to secure your
+item. The product will be shipped once it becomes available.

@@ -1,1 +1,3 @@
-We have a price matching policy where we will match the price of an identical product found on a competitor's website. Please contact our customer support team with the details of the product and the competitor's offer. 
+We have a price matching policy where we will match the price of an identical product found on a
+competitor's website. Please contact our customer support team with the details of the product and the
+competitor's offer.

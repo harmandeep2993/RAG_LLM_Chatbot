@@ -1,6 +1,5 @@
-
-# 1_pdf_processor.py
 import pdfplumber
+import os
 import config
 
 def extract_text_from_pdf(pdf_path):
@@ -25,14 +24,28 @@ def extract_text_from_pdf(pdf_path):
     
     return all_text
 
+def save_extracted_text(text, output_file):
+    """
+    Saves the extracted text into a file.
+    
+    Args:
+        text (str): The extracted text from the PDF.
+        output_file (str): The file path to save the extracted text.
+    """
+    with open(output_file, "w", encoding="utf-8") as f:
+        f.write(text)
+
 if __name__ == "__main__":
-    # Extract text from the PDF specified in config.py
+    # Step 1: Extract text from the PDF
     pdf_text = extract_text_from_pdf(config.FAQ_PDF_PATH)
 
-     # Print a sample of the extracted text
-    print("Sample extracted text:\n")
-    print(pdf_text[:1000])  # Displaying only the first 1000 characters
+    # Step 2: Save the extracted text to a file in data/extracted_text
+    output_dir = "data/extracted_text"
+    os.makedirs(output_dir, exist_ok=True)
+    output_file = os.path.join(output_dir, "extracted_faq.txt")
+    save_extracted_text(pdf_text, output_file)
 
+    print(f"Text extracted and saved at {output_file}.")
 
 '''# 1_pdf_processor.py
 

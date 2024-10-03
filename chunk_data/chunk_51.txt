@@ -1,1 +1,2 @@
-If a product is listed as 'sold out,' it is currently unavailable for purchase. Please check back later or sign up for notifications when it becomes available again. 
+If a product is listed as 'sold out,' it is currently unavailable for purchase. Please check back later or
+sign up for notifications when it becomes available again.

@@ -1,5 +1,5 @@
 import streamlit as st
-from _4_query_handler import load_faiss_index, load_chunks, retrieve_top_k_chunks, generate_response, filter_relevant_chunks
+from scripts._4_query_handler import load_faiss_index, load_chunks, retrieve_top_k_chunks, generate_response, filter_relevant_chunks
 
 # Load the FAISS index and chunks only once
 index = load_faiss_index()
@@ -17,6 +17,7 @@ def keyword_match(query, chunk):
 
     # Return True if any word in query matches any word in the chunk
     return bool(query_keywords.intersection(chunk_keywords))
+
 
 def get_helpbee_response(query):
     """
