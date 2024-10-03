@@ -2,23 +2,23 @@ import faiss
 import numpy as np
 from sentence_transformers import SentenceTransformer
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
-from config import VECTOR_STORE_PATH, EMBEDDING_MODEL, LANGUAGE_MODEL, CHUNK_DATA_PATH
+import scripts._0_config as _0_config
 import os
 import re
 import nltk
 nltk.download('punkt')
 
 # Load the sentence-transformers embedding model
-embedder = SentenceTransformer(EMBEDDING_MODEL)
+embedder = SentenceTransformer(_0_config.EMBEDDING_MODEL)
 
 # Load the FLAN-T5 model and tokenizer
-tokenizer = AutoTokenizer.from_pretrained(LANGUAGE_MODEL)
-model = AutoModelForSeq2SeqLM.from_pretrained(LANGUAGE_MODEL)
+tokenizer = AutoTokenizer.from_pretrained(_0_config.LANGUAGE_MODEL)
+model = AutoModelForSeq2SeqLM.from_pretrained(_0_config.LANGUAGE_MODEL)
 
 # Cache the FAISS index in memory
 faiss_index_cache = None
 
-def load_faiss_index(index_path=VECTOR_STORE_PATH):
+def load_faiss_index(index_path=_0_config.VECTOR_STORE_PATH):
     """
     Loads the FAISS index from the specified file path. Caches the index in memory.
     """
@@ -27,7 +27,7 @@ def load_faiss_index(index_path=VECTOR_STORE_PATH):
         faiss_index_cache = faiss.read_index(index_path)
     return faiss_index_cache
 
-def load_chunks(chunk_dir=CHUNK_DATA_PATH):
+def load_chunks(chunk_dir=_0_config.CHUNK_DATA_PATH):
     """
     Loads all text chunks from the specified directory and tokenizes them into sentences.
     """
@@ -40,59 +40,53 @@ def load_chunks(chunk_dir=CHUNK_DATA_PATH):
                 chunks.extend(sentences)  # Add sentences as chunks
     return chunks
 
-def retrieve_top_k_chunks(query, index, chunks, k=5, distance_threshold=30.0):  # Adjust threshold here
+def retrieve_top_k_chunks(query, index, chunks, k=5, distance_threshold=40.0):
     """
-    Retrieves the top-k most relevant chunks from the FAISS index based on the query.
+    Retrieves the top-k most relevant chunks from the FAISS index based on the user query.
     """
+    # Step 1: Embed the user query
     query_embedding = embedder.encode([query], convert_to_numpy=True)
+    
+    # Step 2: Search the FAISS index for the top-k closest embeddings
     distances, indices = index.search(query_embedding, k)
     
+    # Step 3: Retrieve the corresponding chunks, filtered by distance
     top_chunks = []
     for i, distance in enumerate(distances[0]):
-        if distance < distance_threshold:  # Adjusted for stricter filtering
-            top_chunks.append(chunks[indices[0][i]])
+        if distance < distance_threshold:
+            top_chunks.append(chunks[indices[0][i]])  # Only keep chunks within threshold
     
     return top_chunks
 
 def filter_relevant_chunks(query, chunks):
     """
-    Filters the chunks to keep only those that are most relevant to the query.
+    Filters chunks to keep only those that are most relevant to the query based on keyword matching.
     """
-    query_keywords = set(query.lower().split())
-    ranked_chunks = []
-
-    for chunk in chunks:
-        chunk_keywords = set(chunk.lower().split())
-        match_count = len(query_keywords.intersection(chunk_keywords))
-        ranked_chunks.append((chunk, match_count))
-
-    # Sort by the number of keyword matches (highest first)
-    ranked_chunks.sort(key=lambda x: x[1], reverse=True)
+    query_keywords = set(query.lower().split())  # Split the query into keywords
+    filtered_chunks = [chunk for chunk in chunks if query_keywords.intersection(set(chunk.lower().split()))]
     
-    # Return only chunks with highest matches, or all if no matches
-    if ranked_chunks and ranked_chunks[0][1] > 0:
-        return [chunk[0] for chunk in ranked_chunks if chunk[1] > 0]
-    
-    return chunks  # Default to returning all chunks if no match found
+    # If no chunks match, return the original FAISS results
+    return filtered_chunks if filtered_chunks else chunks
 
 def generate_response(query, context_chunks):
     """
-    Generates a response to the user's query using FLAN-T5 with provided context.
+    Generates a response using the FLAN-T5 model based on the provided context.
     """
     if not context_chunks:
         return "Sorry, I don't have information about that. Please ask another question."
-
-    # Use more chunks to provide better context for the response generation
-    context = " ".join(context_chunks[:3])  # Use top 3 relevant chunks for more context
     
+    # Use the top 2 relevant chunks for more context
+    context = " ".join(context_chunks[:2])
+    
+    # Prepare the input prompt for the language model
     input_text = f"Here is some context: {context} Now answer the query: {query}"
 
+    # Tokenize the input and generate a response using the FLAN-T5 model
     inputs = tokenizer(input_text, return_tensors="pt", max_length=512, truncation=True)
     outputs = model.generate(**inputs, max_length=200)
     
-    response = tokenizer.decode(outputs[0], skip_special_tokens=True)
-    return response
-
+    # Decode and return the generated response
+    return tokenizer.decode(outputs[0], skip_special_tokens=True)
 
 if __name__ == "__main__":
     # Step 1: Load the FAISS index and text chunks

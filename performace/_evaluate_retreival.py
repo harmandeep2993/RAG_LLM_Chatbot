@@ -6,7 +6,7 @@ from sklearn.metrics import precision_score, recall_score, f1_score
 sys.path.append("C:/Users/harma/helpbee_chatbot")  # Adjust this path to the root directory
 
 from scripts._4_query_handler import load_faiss_index, retrieve_top_k_chunks  # Now this import should work
-from config import VECTOR_STORE_PATH, CHUNK_DATA_PATH
+from scripts._0_config import VECTOR_STORE_PATH, CHUNK_DATA_PATH
 from scripts._3_vector_store import load_chunks, create_embeddings  # Import from vector store module
 from sentence_transformers import SentenceTransformer
 

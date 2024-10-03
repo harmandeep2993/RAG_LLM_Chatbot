@@ -1,21 +1,15 @@
 import os
+import scripts._0_config as _0_config
 import faiss
 import numpy as np
 from sentence_transformers import SentenceTransformer
-from config import VECTOR_STORE_PATH, EMBEDDING_MODEL, CHUNK_DATA_PATH
 
 # Load the sentence-transformers embedding model
-embedder = SentenceTransformer(EMBEDDING_MODEL)
+embedder = SentenceTransformer(_0_config.EMBEDDING_MODEL)
 
-def load_chunks(chunk_dir=CHUNK_DATA_PATH):
+def load_chunks(chunk_dir=_0_config.CHUNK_DATA_PATH):
     """
     Loads all text chunks from the specified directory.
-    
-    Args:
-        chunk_dir (str): Directory where the chunked text files are stored.
-        
-    Returns:
-        list: A list of text chunks.
     """
     chunks = []
     for filename in os.listdir(chunk_dir):
@@ -27,12 +21,6 @@ def load_chunks(chunk_dir=CHUNK_DATA_PATH):
 def create_embeddings(text_chunks):
     """
     Creates embeddings for a list of text chunks using the specified embedding model.
-    
-    Args:
-        text_chunks (list): List of text chunks to embed.
-        
-    Returns:
-        np.array: An array of embeddings.
     """
     embeddings = embedder.encode(text_chunks, convert_to_numpy=True, show_progress_bar=True)
     return embeddings
@@ -40,35 +28,18 @@ def create_embeddings(text_chunks):
 def create_faiss_index(embeddings):
     """
     Creates a FAISS index from the given embeddings.
-    
-    Args:
-        embeddings (np.array): Array of embeddings.
-        
-    Returns:
-        faiss.IndexFlatL2: The FAISS index.
     """
-    # Initialize FAISS index with L2 distance metric (Euclidean distance)
     index = faiss.IndexFlatL2(embeddings.shape[1])
-    
-    # Add embeddings to the index
     index.add(embeddings)
-    
     return index
 
-def save_faiss_index(index, index_path=VECTOR_STORE_PATH):
+def save_faiss_index(index, index_path=_0_config.VECTOR_STORE_PATH):
     """
     Saves the FAISS index to the specified file path.
-    
-    Args:
-        index (faiss.Index): The FAISS index to save.
-        index_path (str): File path to save the index.
     """
-    # Ensure the directory exists
     directory = os.path.dirname(index_path)
     if not os.path.exists(directory):
         os.makedirs(directory)
-    
-    # Save the FAISS index
     faiss.write_index(index, index_path)
 
 if __name__ == "__main__":
@@ -87,11 +58,11 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"Error creating embeddings: {e}")
         exit()
-    
+
     # Step 3: Create a FAISS index from the embeddings
     try:
         index = create_faiss_index(embeddings)
         save_faiss_index(index)
-        print(f"FAISS index created and saved at {VECTOR_STORE_PATH}")
+        print(f"FAISS index created and saved at {_0_config.VECTOR_STORE_PATH}")
     except Exception as e:
         print(f"Error creating or saving FAISS index: {e}")

@@ -11,7 +11,7 @@ sys.path.append("C:/Users/harma/helpbee_chatbot")  # Make sure this path is corr
 # Now import the necessary functions
 from scripts._4_query_handler import load_faiss_index, retrieve_top_k_chunks
 from scripts._3_vector_store import load_chunks, create_embeddings
-from config import CHUNK_DATA_PATH, VECTOR_STORE_PATH
+from scripts._0_config import CHUNK_DATA_PATH, VECTOR_STORE_PATH
 
 # Initialize the SentenceTransformer model
 embedder = SentenceTransformer("sentence-transformers/multi-qa-mpnet-base-dot-v1")

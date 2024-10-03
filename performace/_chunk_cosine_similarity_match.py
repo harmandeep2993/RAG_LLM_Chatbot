@@ -3,12 +3,12 @@ import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 from scripts._4_query_handler import load_faiss_index, retrieve_top_k_chunks
 from scripts._3_vector_store import load_chunks, create_embeddings
-from config import VECTOR_STORE_PATH, CHUNK_DATA_PATH
+from scripts._0_config import VECTOR_STORE_PATH, CHUNK_DATA_PATH
 # Append the correct path to the vector_store module
 sys.path.append("C:/Users/harma/helpbee_chatbot")  # Adjust this path to the parent directory of _3_vector_store
 
 from scripts._3_vector_store import create_embeddings, load_chunks  # Import functions for creating embeddings and loading chunks
-from config import CHUNK_DATA_PATH
+from scripts._0_config import CHUNK_DATA_PATH
 
 
 def check_cosine_similarity(embeddings):
