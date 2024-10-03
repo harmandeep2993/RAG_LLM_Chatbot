@@ -1,0 +1,5 @@
+pdfPlumber
+nltk
+faiss-cpu
+sentence-transformers
+streamlit
