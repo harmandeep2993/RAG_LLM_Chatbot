@@ -1,10 +1,6 @@
 # Ignore Python virtual environment
 envrn/
 
-# Ignore large binary files
-*.dll
-*.lib
-
 # Ignore log files
 *.log
 
