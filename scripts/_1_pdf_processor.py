@@ -25,13 +25,6 @@ def extract_text_from_pdf(pdf_path):
     return all_text
 
 def save_extracted_text(text, output_file):
-    """
-    Saves the extracted text into a file.
-    
-    Args:
-        text (str): The extracted text from the PDF.
-        output_file (str): The file path to save the extracted text.
-    """
     with open(output_file, "w", encoding="utf-8") as f:
         f.write(text)
 

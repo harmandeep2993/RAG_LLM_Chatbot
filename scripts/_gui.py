@@ -6,7 +6,7 @@ index = load_faiss_index()
 text_chunks = load_chunks()
 
 # Define a confidence threshold to filter irrelevant queries
-CONFIDENCE_THRESHOLD = 50  # Adjust this to fine-tune strictness
+CONFIDENCE_THRESHOLD = 45  # Adjust this to fine-tune strictness
 
 def keyword_match(query, chunk):
     """

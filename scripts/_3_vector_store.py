@@ -1,6 +1,18 @@
+#_3_vector_store.py 
+
+''' This script converts chunks into embeddings and creates a FAISS index for them.
+
+Step 1: Load the chunk files generated using the _2_chunker.py script and create embeddings for these chunks 
+        using the embedding model defined in the _0_config.py file.
+
+Step 2: After generating the embeddings, a FAISS vector index is created to store these embeddings in a vector 
+        store. Since we are not utilizing a dedicated vector database, the embeddings will be saved locally in 
+        a file with a .index extension, which will be stored in the vector_store directory.'''
+
 import os
-import _0_config
 import faiss
+import numpy as np
+import _0_config
 import numpy as np
 from sentence_transformers import SentenceTransformer
 

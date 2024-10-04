@@ -1,3 +1,4 @@
+# _2_chunker.py file
 import os
 import re
 import _0_config
@@ -58,9 +59,9 @@ if __name__ == "__main__":
     # Step 4: Save the chunks to the chunk_data directory
     save_chunks(text_chunks)
     
-    print(f"Chunking completed! {len(text_chunks)} chunks created and saved in {CHUNK_DIR}.")
-    
     # Print the first few chunks to verify their contents
-    print(f"First few chunks:\n")
-    for i, chunk in enumerate(text_chunks[:3]):
+    print(f"First few sample chunks:\n")
+    for i, chunk in enumerate(text_chunks[:2]):
         print(f"Chunk {i+1}:\n{chunk}\n")
+
+    print(f"{len(text_chunks)} chunks created and saved in {CHUNK_DIR}.\n")
