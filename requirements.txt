@@ -1,4 +1,5 @@
 pdfPlumber
+numpy 
 nltk
 faiss-cpu
 sentence-transformers

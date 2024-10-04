@@ -7,7 +7,7 @@ import os
 
 def main():
     print("Launching Helpbee Chatbot GUI...")
-    os.system("streamlit run scripts/gui.py")
+    os.system("streamlit run scripts/_gui.py")
 
 if __name__ == "__main__":
     main()

@@ -1,5 +1,5 @@
 import os
-import scripts._0_config as _0_config
+import _0_config
 import faiss
 import numpy as np
 from sentence_transformers import SentenceTransformer

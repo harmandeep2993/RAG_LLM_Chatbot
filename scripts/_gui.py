@@ -1,12 +1,12 @@
 import streamlit as st
-from scripts._4_query_handler import load_faiss_index, load_chunks, retrieve_top_k_chunks, generate_response, filter_relevant_chunks
+from _4_query_handler import load_faiss_index, load_chunks, retrieve_top_k_chunks, generate_response, filter_relevant_chunks
 
 # Load the FAISS index and chunks only once
 index = load_faiss_index()
 text_chunks = load_chunks()
 
 # Define a confidence threshold to filter irrelevant queries
-CONFIDENCE_THRESHOLD = 45  # Adjust this to fine-tune strictness
+CONFIDENCE_THRESHOLD = 50  # Adjust this to fine-tune strictness
 
 def keyword_match(query, chunk):
     """
@@ -19,15 +19,18 @@ def keyword_match(query, chunk):
     return bool(query_keywords.intersection(chunk_keywords))
 
 def get_helpbee_response(query):
+    # Step 1: Retrieve top chunks and distances
     top_chunks = retrieve_top_k_chunks(query, index, text_chunks, k=3)
-    
-    # Debugging: Print the retrieved chunks
+
+    # Debug: Print retrieved chunks
     print("Retrieved Chunks:")
     for chunk in top_chunks:
-        print(chunk)
+        print(f"- {chunk}\n")
 
+    # Step 2: Filter relevant chunks based on query
     relevant_chunks = filter_relevant_chunks(query, top_chunks)
-    
+
+    # Step 3: Generate a response
     if relevant_chunks:
         response = generate_response(query, relevant_chunks)
     else:
