@@ -1,0 +1,17 @@
+# Ignore Python virtual environment
+envrn/
+
+# Ignore large binary files
+*.dll
+*.lib
+
+# Ignore log files
+*.log
+
+# Ignore cache or temporary files
+__pycache__/
+*.tmp
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
