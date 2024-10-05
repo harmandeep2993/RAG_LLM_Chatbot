@@ -1,9 +1,9 @@
-# config.py
+# _0_config.py
 
 # Path to the PDF containing FAQ data
 FAQ_PDF_PATH = "data/raw/Miscellaneous Frequent Question and Answers (F&Q).pdf"
 
-# Path to stroe the extract data
+# Path to store the extract data
 EXTRACT_TEXT_DATA_PATH="data/extracted_text"
 
 # Path to chunk data

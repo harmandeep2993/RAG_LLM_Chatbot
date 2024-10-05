@@ -1,9 +1,14 @@
 import streamlit as st
-from _4_query_handler import load_faiss_index, load_chunks, retrieve_top_k_chunks, generate_response, filter_relevant_chunks
+from _4_query_handler import load_faiss_index, load_chunks_and_metadata, retrieve_top_k_chunks, generate_response, filter_relevant_chunks
+from sklearn.metrics.pairwise import cosine_similarity
+from sentence_transformers import SentenceTransformer
+import _0_config
+# Load the sentence-transformers embedding model
+embedder = SentenceTransformer(_0_config.EMBEDDING_MODEL)
 
-# Load the FAISS index and chunks only once
+# Load the FAISS index and combined question-answer chunks only once
 index = load_faiss_index()
-text_chunks = load_chunks()
+combined_chunks = load_chunks_and_metadata()
 
 # Define a confidence threshold to filter irrelevant queries
 CONFIDENCE_THRESHOLD = 45  # Adjust this to fine-tune strictness
@@ -18,17 +23,43 @@ def keyword_match(query, chunk):
     # Return True if any word in query matches any word in the chunk
     return bool(query_keywords.intersection(chunk_keywords))
 
+def semantic_match(query_embedding, chunk_embeddings, threshold=0.7):
+    """
+    Matches the query to the chunk using cosine similarity between embeddings.
+    Ensures the query_embedding is properly reshaped and chunk_embeddings is not empty.
+    """
+    if chunk_embeddings.size == 0:
+        return []  # Return empty list if no chunks
+
+    # Reshape query_embedding to ensure it's 2D (1 sample, multiple features)
+    query_embedding = query_embedding.reshape(1, -1)
+
+    # Calculate cosine similarities
+    similarities = cosine_similarity(query_embedding, chunk_embeddings)
+    
+    # Filter chunks based on similarity threshold
+    relevant_indices = [i for i, score in enumerate(similarities[0]) if score > threshold]
+    
+    return relevant_indices
+
 def get_helpbee_response(query):
     # Step 1: Retrieve top chunks and distances
-    top_chunks = retrieve_top_k_chunks(query, index, text_chunks, k=3)
+    top_chunks = retrieve_top_k_chunks(query, index, combined_chunks, k=3)
 
-    # Debug: Print retrieved chunks
-    print("Retrieved Chunks:")
-    for chunk in top_chunks:
-        print(f"- {chunk}\n")
-
-    # Step 2: Filter relevant chunks based on query
+    # Step 2: Filter relevant chunks based on expanded keyword matching
     relevant_chunks = filter_relevant_chunks(query, top_chunks)
+
+    # If no chunks pass keyword filtering, fallback to semantic matching
+    if not relevant_chunks:
+        query_embedding = embedder.encode([query], convert_to_numpy=True)
+        
+        # Ensure that there are chunks to compare against
+        if top_chunks:
+            chunk_embeddings = embedder.encode(top_chunks, convert_to_numpy=True)
+            relevant_indices = semantic_match(query_embedding, chunk_embeddings)
+
+            # Retrieve relevant chunks based on semantic similarity
+            relevant_chunks = [top_chunks[i] for i in relevant_indices] if relevant_indices else []
 
     # Step 3: Generate a response
     if relevant_chunks:
