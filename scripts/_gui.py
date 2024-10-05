@@ -11,7 +11,7 @@ index = load_faiss_index()
 combined_chunks = load_chunks_and_metadata()
 
 # Define a confidence threshold to filter irrelevant queries
-CONFIDENCE_THRESHOLD = 45  # Adjust this to fine-tune strictness
+CONFIDENCE_THRESHOLD = 40  # Adjust this to fine-tune strictness
 
 def keyword_match(query, chunk):
     """
