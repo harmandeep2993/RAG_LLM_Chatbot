@@ -3,7 +3,7 @@
 # Path to the PDF containing FAQ data
 FAQ_PDF_PATH = "data/raw/Miscellaneous Frequent Question and Answers (F&Q).pdf"
 
-# Path to store the extract data
+# Path to store the extract data conda
 EXTRACT_TEXT_DATA_PATH="data/extracted_text"
 
 # Path to chunk data

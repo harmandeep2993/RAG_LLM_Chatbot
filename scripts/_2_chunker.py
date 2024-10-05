@@ -68,7 +68,8 @@ if __name__ == "__main__":
     print(f"{len(text_chunks)} chunks created and saved with corresponding questions.")
 
 
-'''''# _2_chunker.py file
+'''
+# _2_chunker.py file
 import os
 import re
 import _0_config
@@ -160,4 +161,4 @@ if __name__ == "__main__":
     for i, chunk in enumerate(text_chunks[:2]):
         print(f"Chunk {i+1}:\n{chunk}\n")
 
-    print(f"{len(text_chunks)} chunks created and saved in {CHUNK_DIR}.\n")'''''
+    print(f"{len(text_chunks)} chunks created and saved in {CHUNK_DIR}.\n")'''
