@@ -1,1 +1,2 @@
-To leave a product review, navigate to the product page on our website and click on the 'Write a Review' button. You can share your feedback and rating based on your experience with the product. 
+Question: how can i view the status of my order?
+Answer: to view the status of your order, log into your account and navigate to the ‘purchase history' section. here, you will find details about your order, including status (processing, shipped, delivered), tracking information, and estimated delivery dates

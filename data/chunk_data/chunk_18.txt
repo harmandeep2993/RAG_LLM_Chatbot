@@ -1,1 +1,2 @@
-Yes, we offer bulk or wholesale discounts for certain products. Please contact our customer support team or visit our Wholesale page for more information and to discuss your specific requirements. 
+Question: what currencies do you except for international orders?
+Answer: our website accepts payments in multiple currencies, depending on your location. the currency will be automatically selected based on your shipping address during checkout.

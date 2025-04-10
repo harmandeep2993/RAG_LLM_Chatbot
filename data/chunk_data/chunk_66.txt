@@ -1,1 +1,2 @@
-If a product is listed as 'out of stock' but available for backorder, you can place an order to secure your item. The product will be shipped once it becomes available. 
+Question: can i order a product that is listed as 'pre-order' with other in-stock items?
+Answer: yes, you can order a combination of pre-order and in-stock items in one transaction. however, please note that your entire order will be shipped together once the pre-order items become available. if you need the in-stock items sooner, consider placing separate orders.

@@ -1,0 +1,4 @@
+Metric,t-Statistic,p-Value
+Faithfulness (Cosine Similarity),5.660738118298355,0.0003093449559831536
+Context Precision,4.886502530107214,0.0008635876591542158
+Total Response Time (seconds),1.1837943658476513,0.2668170617051967

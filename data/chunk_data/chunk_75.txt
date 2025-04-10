@@ -1,1 +1,2 @@
-If a product is listed as 'sold out' but available for pre-order, you can place an order to secure your item. The product will be shipped once it becomes available. 
+Question: can i order a product if it is listed as 'temporarily unavailable'?
+Answer: if a product is listed as 'temporarily unavailable,' it means it is out of stock but may be restocked in the future. you can sign up for notifications on the product page to be alerted once it is available again, ensuring you do not miss the chance to order.

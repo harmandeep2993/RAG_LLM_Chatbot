@@ -1,1 +1,2 @@
-If your discount code is not working, please double-check the terms and conditions associated with the code. If the issue persists, contact our customer support team for assistance. 
+Question: do you offer international shipping?
+Answer: yes, we offer international shipping to select countries. during the checkout process, the availability of shipping to your location, along with the corresponding shipping costs, will be automatically calculated based on your address. please note that shipping times and fees may vary depending on the destination, and you may be responsible for additional customs duties or taxes, depending on your country’s regulations.

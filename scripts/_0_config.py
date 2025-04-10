@@ -14,4 +14,8 @@ VECTOR_STORE_PATH = "vector_store/faq_store.index"
 
 # Embedding and language model names
 EMBEDDING_MODEL = "sentence-transformers/multi-qa-mpnet-base-dot-v1"
-LANGUAGE_MODEL = "google/flan-t5-large"
+# LANGUAGE_MODEL = "mistralai/Mistral-7B-Instruct-v0.3"
+
+# Ollama Model for text generation
+LANGUAGE_MODEL = "ollama"  # Ollama as the platform
+MODEL_NAME = "mistral"  # Using the Mistral model

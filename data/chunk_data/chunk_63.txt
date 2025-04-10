@@ -1,1 +1,2 @@
-If a product is listed as 'discontinued' but still visible on the website, it may be an error. Please contact our customer support team for clarification. 
+Question: can i order a product that is listed as 'coming soon'?
+Answer: products listed as 'coming soon' are not available for immediate purchase. however, you can sign up for notifications to be informed when the product becomes available. once in stock, you will receive an e-mail- alert, allowing you to place your order.

@@ -1,0 +1,3 @@
+Metric,Wilcoxon Statistic,p-Value
+Answer Relevance,16.5,0.47289397966983804
+Faithfulness (ROUGE-L),0.0,0.007632441648205508

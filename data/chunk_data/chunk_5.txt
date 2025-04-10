@@ -1,1 +1,2 @@
-You can cancel your order if it has not been shipped yet. Please contact our customer support team with your order details, and we will assist you with the cancellation process. 
+Question: how to cancel the order?
+Answer: to cancel your order from your account, log in and navigate to the ‘purchase history' section. find the order you wish to cancel, and if it has not been shipped yet, you will see an option to cancel the order. click on the cancellation option, confirm your request, and the order will be canceled. you will receive a confirmation, and any payments made will be refunded.

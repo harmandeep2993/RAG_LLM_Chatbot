@@ -1,1 +1,2 @@
-Yes, we take the security of your personal and payment details seriously. We use industry-standard encryption and follow strict security protocols to ensure your information is protected. 
+Question: why was my payment declined?
+Answer: payments may be declined for a variety of reasons, including insufficient funds, incorrect billing information, or issues with your card provider. if your payment is declined, please double-check your payment details or contact your bank. you can also try an alternate payment method.

@@ -1,0 +1,6 @@
+Metric,RAG Mean,Non-RAG Mean
+Faithfulness (Cosine Similarity),0.83,0.72
+Faithfulness (ROUGE-L),0.60,0.20
+Answer Relevance,0.72,0.81
+Context Precision,0.69,0.62
+Total Response Time (seconds),21.99,18.06

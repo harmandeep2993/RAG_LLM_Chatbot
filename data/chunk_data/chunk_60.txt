@@ -1,1 +1,2 @@
-If a product is listed as 'on hold,' it is temporarily unavailable for purchase. Please check back later or sign up for notifications when it becomes available. 
+Question: do you offer installation services for your products?
+Answer: installation services are available for selected products. please check the product description to see if installation is offered. if available, you can request the service during the checkout process. for more details or assistance, feel free to contact our customer support team. they will help you with any additional installation inquiries.

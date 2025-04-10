@@ -1,1 +1,2 @@
-Yes, you can return a product purchased as a gift. However, refunds will typically be issued to the original payment method used for the purchase. 
+Question: can i place an order without creating an account?
+Answer: yes, you can place an order as a guest without the need to create an account. however, creating an account provides additional benefits, such as the ability to track your orders, save your details for faster checkout in the future, and access exclusive promotions and offers.

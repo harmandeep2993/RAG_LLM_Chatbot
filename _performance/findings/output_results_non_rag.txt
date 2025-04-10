@@ -1,0 +1,447 @@
+
+########################################
+Iteration 1
+########################################
+
+========================================
+Question 1: How can I create an account?
+========================================
+Number of Top Chunks Retrieved: 2
+Number of Filtered Top Chunks: 1
+Generated Response:  To create an account, typically you'll need to follow these steps:
+
+1. Navigate to the website or application where you wish to create an account.
+2. Look for a button or link labeled "Sign Up," "Create Account," or similar. Click on it.
+3. You'll likely be asked to provide some personal information such as your name, email address, and password. Some platforms may require additional details like phone number or date of birth.
+4. Carefully fill in the required fields, ensuring that you enter accurate information. Incorrect data could potentially lead to complications later on.
+5. After filling out the form, review it for any errors before submitting. Once you're satisfied with your input, click the "Submit," "Register," or similar button to complete the process.
+6. If your provided details are valid and unique, you should receive a confirmation message that your account has been successfully created. Check your email (or phone number) for further instructions on activating or accessing your new account.
+Faithfulness Score (Cosine Similarity): 0.9001067280769348
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.22289156626506024, recall=0.27611940298507465, fmeasure=0.24666666666666667)}
+Answer Relevance Score (between query and response): 0.800999641418457
+Context Precision (Cosine Similarity): 0.6915751099586487
+Total Response Time: 26.44 seconds
+Query Processing Time: 26.44 seconds
+
+========================================
+Question 2: How can I track my order?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  To track your order, you typically need the order number or tracking number provided at the time of purchase. Visit the website of the store from which you made the purchase and navigate to the 'Order Tracking' or 'Track My Order' section. Enter your order number or tracking number, and you should be able to see the current status of your shipment. If you encounter any difficulties, feel free to reach out to their customer service for assistance. They are usually more than happy to help!
+Faithfulness Score (Cosine Similarity): 0.8588379621505737
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.26744186046511625, recall=0.19827586206896552, fmeasure=0.22772277227722773)}
+Answer Relevance Score (between query and response): 0.8458679914474487
+Context Precision (Cosine Similarity): 0.7881550192832947
+Total Response Time: 13.35 seconds
+Query Processing Time: 13.35 seconds
+
+========================================
+Question 3: How to cancel the order?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  To cancel an order, please follow these steps:
+
+1. Locate your order confirmation email or check your account page if you have created one with the platform or retailer where you placed the order.
+2. Look for a link that says "Cancel Order" or "Return/Cancel Order." This is usually found in the body of the email or under your order details on the website.
+3. Click on the link, and you will be redirected to a page where you can confirm the cancellation. Make sure to follow the prompts carefully to ensure successful cancellation.
+4. If no link is available, contact the customer service team for assistance via phone, email or live chat. They may require additional information such as your order number or personal details before processing the cancellation.
+5. Once your request is processed, you should receive a confirmation about the order cancellation either by email or message on the platform. Keep this confirmation for future reference in case of any queries.
+Faithfulness Score (Cosine Similarity): 0.9253820180892944
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.16363636363636364, recall=0.3698630136986301, fmeasure=0.226890756302521)}
+Answer Relevance Score (between query and response): 0.8285208940505981
+Context Precision (Cosine Similarity): 0.7606166005134583
+Total Response Time: 26.06 seconds
+Query Processing Time: 26.06 seconds
+
+========================================
+Question 4: How long does it take for items to be shipped?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  As a helpful assistant, I'm here to help! The shipping time for items can vary greatly depending on the specific carrier used and the destination. Generally, standard shipping can take between 3-5 business days within the same country, while international shipping might take anywhere from 7-21 business days. However, these are just averages, and actual delivery times could be faster or slower. It's always best to check with the carrier for a more accurate estimate based on your specific shipment details.
+Faithfulness Score (Cosine Similarity): 0.813103437423706
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.29411764705882354, recall=0.3424657534246575, fmeasure=0.31645569620253167)}
+Answer Relevance Score (between query and response): 0.7185354232788086
+Context Precision (Cosine Similarity): 0.5316546559333801
+Total Response Time: 15.29 seconds
+Query Processing Time: 15.29 seconds
+
+========================================
+Question 5: Can I cancel my order if it is shipped?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  As a general rule, once an order has been shipped, the opportunity to cancel or modify it becomes more limited. However, this can depend on the specific policies of the retailer you're dealing with. Some may allow returns or exchanges for shipped items under certain conditions, while others may not. It's best to reach out to the retailer's customer service team directly and explain your situation. They will be able to provide guidance based on their specific return or cancellation policy.
+Faithfulness Score (Cosine Similarity): 0.7481400370597839
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.17857142857142858, recall=0.11450381679389313, fmeasure=0.13953488372093023)}
+Answer Relevance Score (between query and response): 0.7923663258552551
+Context Precision (Cosine Similarity): 0.7129362225532532
+Total Response Time: 14.89 seconds
+Query Processing Time: 14.89 seconds
+
+========================================
+Question 6: What should I do if my package is lost during shipping?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  I'm sorry to hear about your missing package. If you find that your delivery hasn't arrived as expected, it would be best to contact the shipping carrier first. They can help you track the status of your shipment and, in case of a delay or loss, initiate an investigation. In most cases, they have procedures to handle such situations. You might need to provide details like the tracking number, sender's name, and date of shipment. If the carrier is unable to locate the package after their investigation, they should be able to issue a refund or resend the package if possible. It's also advisable to keep in touch with the sender regarding the status of your delivery.
+Faithfulness Score (Cosine Similarity): 0.7557727098464966
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.17355371900826447, recall=0.2727272727272727, fmeasure=0.21212121212121213)}
+Answer Relevance Score (between query and response): 0.8014626502990723
+Context Precision (Cosine Similarity): 0.694945752620697
+Total Response Time: 21.64 seconds
+Query Processing Time: 21.64 seconds
+
+========================================
+Question 7: How can I reach to customer service?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  To reach our customer service team, you may contact us through various channels. We recommend calling our toll-free number during business hours or sending an email at any time. You can also try reaching out via our live chat feature on the website if it's available. For quicker assistance, I encourage you to check our FAQ section as well. We are here to help and aim to respond promptly!
+Faithfulness Score (Cosine Similarity): 0.7222908735275269
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.22535211267605634, recall=0.3018867924528302, fmeasure=0.25806451612903225)}
+Answer Relevance Score (between query and response): 0.8043774366378784
+Context Precision (Cosine Similarity): 0.6907963156700134
+Total Response Time: 13.37 seconds
+Query Processing Time: 13.37 seconds
+
+========================================
+Question 8: My discount coupon not working.
+========================================
+Number of Top Chunks Retrieved: 2
+Number of Filtered Top Chunks: 1
+Generated Response:  I'm truly sorry for any inconvenience you might be experiencing with your discount coupon. It could be due to a few reasons such as an expired code, incorrect code entry, or the coupon may not be applicable to the product(s) in your cart. Please double-check the validity and correctness of the code, and make sure it's applicable to the items you're trying to purchase. If the problem persists, I would recommend reaching out to our customer support team for further assistance. They will be more than happy to help you resolve this issue as quickly as possible.
+Faithfulness Score (Cosine Similarity): 0.7382293939590454
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.23529411764705882, recall=0.4, fmeasure=0.29629629629629634)}
+Answer Relevance Score (between query and response): 0.816694974899292
+Context Precision (Cosine Similarity): 0.6585854887962341
+Total Response Time: 19.99 seconds
+Query Processing Time: 19.99 seconds
+
+========================================
+Question 9: Can I buy / make payment through installments?
+========================================
+Number of Top Chunks Retrieved: 2
+Number of Filtered Top Chunks: 1
+Generated Response:  Yes, many businesses offer payment plans or installment options for their products or services. This is particularly common with larger purchases such as electronics, furniture, vehicles, and homes. It's important to note that these plans may have different terms, conditions, and interest rates. Always ensure you understand the details before committing to any installment plan. If you're interested in purchasing something through installments, I recommend checking with the specific retailer or service provider for their available options.
+Faithfulness Score (Cosine Similarity): 0.7423126697540283
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.12658227848101267, recall=0.2127659574468085, fmeasure=0.15873015873015875)}
+Answer Relevance Score (between query and response): 0.781511664390564
+Context Precision (Cosine Similarity): 0.6345993280410767
+Total Response Time: 16.19 seconds
+Query Processing Time: 16.19 seconds
+
+========================================
+Question 10: Can you provide information about BSBI School in Berlin?
+========================================
+Number of Top Chunks Retrieved: 0
+Number of Filtered Top Chunks: 0
+Generated Response:  Sure, I'd be happy to help! BSBI Business School is a private institution located in Berlin, Germany. It offers undergraduate and graduate programs in various business fields such as management, finance, marketing, and more. The school prides itself on providing practical, industry-relevant education, with a strong focus on international perspectives. The campus is situated centrally, offering easy access to the city's vibrant culture, businesses, and historical sites. BSBI also offers scholarships for talented students and has a diverse student body representing numerous nationalities. For detailed information about programs, admissions, and other aspects, I would recommend visiting their official website or contacting their admission department directly.
+Faithfulness Score (Cosine Similarity): 0.0
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0, recall=0, fmeasure=0)}
+Answer Relevance Score (between query and response): 0.7740770578384399
+Context Precision (Cosine Similarity): 0.0
+Total Response Time: 21.19 seconds
+Query Processing Time: 21.19 seconds
+
+########################################
+End of Iteration 1
+########################################
+
+########################################
+Iteration 2
+########################################
+
+========================================
+Question 1: How can I create an account?
+========================================
+Number of Top Chunks Retrieved: 2
+Number of Filtered Top Chunks: 1
+Generated Response:  To create an account, you typically follow these steps:
+
+1. Navigate to the website or application where you wish to create an account.
+2. Look for the "Sign Up", "Create Account" or similar button usually located at the top or bottom of the page.
+3. Fill in the required fields such as your email address, password, and personal details. Be sure to provide accurate information.
+4. Follow any instructions provided, such as verifying your email address through a link sent to you by the website or application.
+5. Once completed, click on the "Submit" or "Create Account" button to finalize the process.
+6. You should now have an account and be able to log in using your credentials.
+Faithfulness Score (Cosine Similarity): 0.9111688733100891
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.3305084745762712, recall=0.291044776119403, fmeasure=0.3095238095238095)}
+Answer Relevance Score (between query and response): 0.7961272597312927
+Context Precision (Cosine Similarity): 0.6946947574615479
+Total Response Time: 22.13 seconds
+Query Processing Time: 22.13 seconds
+
+========================================
+Question 2: How can I track my order?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  To track your order, you'll typically need your order number or tracking number. This unique identifier is provided to you once your order has been processed. You can find this information in the email confirmation you received after placing your order. Visit the website of the store from which you purchased the item and navigate to their tracking page. Enter your tracking number and you should be able to see the current status of your delivery. If you're still having trouble, don't hesitate to contact the retailer's customer service for assistance. They'll be happy to help you locate your package.
+Faithfulness Score (Cosine Similarity): 0.7975538969039917
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.24761904761904763, recall=0.22413793103448276, fmeasure=0.23529411764705882)}
+Answer Relevance Score (between query and response): 0.782110333442688
+Context Precision (Cosine Similarity): 0.7179873585700989
+Total Response Time: 16.85 seconds
+Query Processing Time: 16.85 seconds
+
+========================================
+Question 3: How to cancel the order?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  To cancel an order, please navigate to your account settings or the order details page. Look for the option labeled "Cancel Order" or similar. If you cannot find it, reach out to our customer service team immediately for assistance. They will be happy to help you resolve any issues and cancel your order if necessary.
+Faithfulness Score (Cosine Similarity): 0.9210099577903748
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.2909090909090909, recall=0.2191780821917808, fmeasure=0.25)}
+Answer Relevance Score (between query and response): 0.8846323490142822
+Context Precision (Cosine Similarity): 0.7765420079231262
+Total Response Time: 9.35 seconds
+Query Processing Time: 9.35 seconds
+
+========================================
+Question 4: How long does it take for items to be shipped?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  As a helpful assistant, I don't have real-time data but can provide general information about shipping times. Shipping duration depends on the destination and the delivery method chosen. For domestic shipments within the same country, it usually takes 1-3 business days for expedited shipping, while standard shipping may take up to a week or more. International shipments can take anywhere from several days to several weeks, depending on customs clearance and the specific carrier being used. It's always best to check with your chosen courier service for their specific delivery times and estimates.
+Faithfulness Score (Cosine Similarity): 0.7749345898628235
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.20618556701030927, recall=0.273972602739726, fmeasure=0.23529411764705882)}
+Answer Relevance Score (between query and response): 0.6951114535331726
+Context Precision (Cosine Similarity): 0.5506793856620789
+Total Response Time: 16.55 seconds
+Query Processing Time: 16.55 seconds
+
+========================================
+Question 5: Can I cancel my order if it is shipped?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  While I don't have real-time access to specific orders or shipping statuses, generally speaking, it may be possible to cancel an order that has been shipped but not yet delivered, depending on the policies of the retailer or service you've used. However, the success of such a request can depend on various factors, including the time since the order was placed and shipped, the reason for cancellation, and the specific terms of the seller's return/cancellation policy. It's best to contact the seller directly to discuss your options and understand their cancellation policy in detail.
+Faithfulness Score (Cosine Similarity): 0.764126181602478
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.2, recall=0.15267175572519084, fmeasure=0.17316017316017318)}
+Answer Relevance Score (between query and response): 0.827140212059021
+Context Precision (Cosine Similarity): 0.6821476817131042
+Total Response Time: 17.63 seconds
+Query Processing Time: 17.63 seconds
+
+========================================
+Question 6: What should I do if my package is lost during shipping?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  If your package appears to be lost during shipping, I recommend contacting the shipping carrier first. You can usually find their customer service contact information on your receipt or the tracking details provided by the seller. Provide them with your tracking number and explain that your package seems to be lost. They may be able to locate it or initiate an investigation. If the carrier is unable to help, you should reach out to the seller about filing a claim for reimbursement or sending another package. In some cases, insurance may cover the loss of the package, so check your shipping policy to see if you have coverage.
+Faithfulness Score (Cosine Similarity): 0.8235353827476501
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.2037037037037037, recall=0.2857142857142857, fmeasure=0.23783783783783782)}
+Answer Relevance Score (between query and response): 0.9041815400123596
+Context Precision (Cosine Similarity): 0.7025383114814758
+Total Response Time: 19.06 seconds
+Query Processing Time: 19.06 seconds
+
+========================================
+Question 7: How can I reach to customer service?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  To contact our customer service, please visit our official website or find us on popular social media platforms such as Facebook or Twitter. Alternatively, you may also call our helpline during business hours for immediate assistance. Our team is always ready to help and will do their best to resolve your concerns promptly and effectively.
+Faithfulness Score (Cosine Similarity): 0.7587085962295532
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.2, recall=0.20754716981132076, fmeasure=0.20370370370370372)}
+Answer Relevance Score (between query and response): 0.7705270051956177
+Context Precision (Cosine Similarity): 0.7327432632446289
+Total Response Time: 10.51 seconds
+Query Processing Time: 10.51 seconds
+
+========================================
+Question 8: My discount coupon not working.
+========================================
+Number of Top Chunks Retrieved: 2
+Number of Filtered Top Chunks: 1
+Generated Response:  I'm sorry to hear that you're having trouble with your discount coupon. It could be due to several reasons such as the coupon expiration, incorrect application, or incompatibility with specific items. Please double-check the validity of the coupon and ensure it is applicable to the products you are trying to purchase. If the issue persists, I recommend reaching out to customer service for further assistance. They should be able to help you resolve this problem quickly.
+Faithfulness Score (Cosine Similarity): 0.7388732433319092
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.21518987341772153, recall=0.2833333333333333, fmeasure=0.2446043165467626)}
+Answer Relevance Score (between query and response): 0.840379536151886
+Context Precision (Cosine Similarity): 0.647283673286438
+Total Response Time: 15.52 seconds
+Query Processing Time: 15.52 seconds
+
+========================================
+Question 9: Can I buy / make payment through installments?
+========================================
+Number of Top Chunks Retrieved: 2
+Number of Filtered Top Chunks: 1
+Generated Response:  Yes, you can often make payments in installments depending on the type of purchase or service. This is a common method offered by many retailers, financial institutions, and e-commerce platforms. The number of installments may vary, and terms and conditions will apply. It's always essential to understand the details before choosing this option, such as total cost, interest rates, and any associated fees. If you have specific questions about a particular product or service, I would recommend reaching out to the seller for more detailed information.
+Faithfulness Score (Cosine Similarity): 0.7368133068084717
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.09090909090909091, recall=0.1702127659574468, fmeasure=0.11851851851851852)}
+Answer Relevance Score (between query and response): 0.8309458494186401
+Context Precision (Cosine Similarity): 0.682849645614624
+Total Response Time: 16.50 seconds
+Query Processing Time: 16.50 seconds
+
+========================================
+Question 10: Can you provide information about BSBI School in Berlin?
+========================================
+Number of Top Chunks Retrieved: 0
+Number of Filtered Top Chunks: 0
+Generated Response: BSBI School, also known as Berlin School of Business and Innovation, is a higher education institution located in the heart of Berlin, Germany. Established in 2017, it offers undergraduate and postgraduate programs in fields such as Business, Management, IT, and Law. The school prides itself on providing a practical and innovative approach to learning, with a strong focus on preparing students for the demands of today's job market. BSBI School is committed to fostering an international environment, welcoming students from various cultures and backgrounds. It also provides a unique opportunity for students to study in one of Europe's most vibrant cities, offering a rich cultural experience alongside academic development.
+Faithfulness Score (Cosine Similarity): 0.0
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0, recall=0, fmeasure=0)}
+Answer Relevance Score (between query and response): 0.7836328744888306
+Context Precision (Cosine Similarity): 0.0
+Total Response Time: 20.44 seconds
+Query Processing Time: 20.44 seconds
+
+########################################
+End of Iteration 2
+########################################
+
+########################################
+Iteration 3
+########################################
+
+========================================
+Question 1: How can I create an account?
+========================================
+Number of Top Chunks Retrieved: 2
+Number of Filtered Top Chunks: 1
+Generated Response:  To create an account, you typically need to follow these steps. First, navigate to the website or application where you'd like to sign up. Look for a "Sign Up," "Create Account," or similar button, usually located in the top right corner of the homepage. Click on this button to initiate the registration process. You will then be prompted to enter personal details such as your name, email address, and possibly a password. Some services may require additional information like phone number, date of birth, or social media handles. Be sure to read and agree to any terms and conditions before finalizing your account creation. If you encounter any issues during this process, feel free to reach out for further assistance.
+Faithfulness Score (Cosine Similarity): 0.9079890251159668
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.36363636363636365, recall=0.3283582089552239, fmeasure=0.3450980392156863)}
+Answer Relevance Score (between query and response): 0.8133665323257446
+Context Precision (Cosine Similarity): 0.7035449743270874
+Total Response Time: 20.37 seconds
+Query Processing Time: 20.37 seconds
+
+========================================
+Question 2: How can I track my order?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  To track your order, you usually need to use the tracking number provided by the seller or shipping company. This number is typically sent to you via email once your package has been shipped. You can enter this tracking number on the website of the courier service (such as USPS, FedEx, UPS, etc.) to get updates on the status and location of your package. If you're unsure about who the courier is, check with the seller or the retailer from whom you purchased the item. They should be able to provide you with more information.
+Faithfulness Score (Cosine Similarity): 0.8543548583984375
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.25, recall=0.20689655172413793, fmeasure=0.22641509433962265)}
+Answer Relevance Score (between query and response): 0.8107167482376099
+Context Precision (Cosine Similarity): 0.7375326156616211
+Total Response Time: 16.15 seconds
+Query Processing Time: 16.15 seconds
+
+========================================
+Question 3: How to cancel the order?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  To cancel an order, you would typically need to contact the vendor or retailer directly as soon as possible. The process may vary depending on the platform or store. Here are some general steps:
+
+1. Locate the order details either in your email or account dashboard.
+2. Find the customer service or support section on their website.
+3. Send a request to cancel the order, including your order number and reason for cancellation.
+4. Wait for their response. If approved, the order will be cancelled, but please note that processing times may apply.
+5. If you don't receive a response within a reasonable timeframe, follow up with another message.
+Faithfulness Score (Cosine Similarity): 0.9044986963272095
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.20909090909090908, recall=0.3150684931506849, fmeasure=0.25136612021857924)}
+Answer Relevance Score (between query and response): 0.8544034957885742
+Context Precision (Cosine Similarity): 0.7476460933685303
+Total Response Time: 20.09 seconds
+Query Processing Time: 20.09 seconds
+
+========================================
+Question 4: How long does it take for items to be shipped?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  As a helpful assistant, I'm happy to help! The shipping time for items can vary greatly depending on the specific service used (such as standard mail, expedited shipping, or even same-day delivery in some cases), the sender's location, and the destination. Generally speaking, standard domestic shipping in the United States might take about 3-5 business days, while international shipping could take anywhere from a week to several weeks. For precise information on your specific shipment, I would recommend checking with the shipper or courier service directly.
+Faithfulness Score (Cosine Similarity): 0.8011098504066467
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.2, recall=0.2465753424657534, fmeasure=0.22085889570552147)}
+Answer Relevance Score (between query and response): 0.7504901885986328
+Context Precision (Cosine Similarity): 0.5500513911247253
+Total Response Time: 17.52 seconds
+Query Processing Time: 17.52 seconds
+
+========================================
+Question 5: Can I cancel my order if it is shipped?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  I'm sorry for any inconvenience. Once an order has been shipped, it can typically no longer be cancelled due to the logistics involved. However, you should contact the retailer immediately as there may be exceptions or special circumstances where they can still process a return. Please refer to the specific store's policy for more accurate information.
+Faithfulness Score (Cosine Similarity): 0.7897392511367798
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.25862068965517243, recall=0.11450381679389313, fmeasure=0.15873015873015872)}
+Answer Relevance Score (between query and response): 0.7746394276618958
+Context Precision (Cosine Similarity): 0.7049434781074524
+Total Response Time: 11.90 seconds
+Query Processing Time: 11.90 seconds
+
+========================================
+Question 6: What should I do if my package is lost during shipping?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  I'm really sorry to hear about the loss of your package, but don't worry! The first step you should take is to contact the shipping company that was handling your delivery. They will have the necessary information and procedures for tracking packages, including any potential delays or mishaps in their network. Be prepared to provide details such as your order number, shipping label, and the date of expected delivery. Most companies offer online chat support or a phone service where you can discuss this issue further. If the package cannot be located, they may initiate an investigation or offer compensation based on their policy. Additionally, if you made the purchase from an online retailer, contact them as well to inform them about the problem and seek any potential remedies they might provide. Stay patient during this process and maintain clear communication with both the shipping company and the retailer for a quick resolution.
+Faithfulness Score (Cosine Similarity): 0.7800416946411133
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.12903225806451613, recall=0.2597402597402597, fmeasure=0.17241379310344826)}
+Answer Relevance Score (between query and response): 0.8450384736061096
+Context Precision (Cosine Similarity): 0.6829277873039246
+Total Response Time: 26.41 seconds
+Query Processing Time: 26.41 seconds
+
+========================================
+Question 7: How can I reach to customer service?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  To get in touch with our customer service team, you can typically find their contact information on the company's website under the 'Contact Us' or 'Support' section. If you prefer, some companies offer live chat support directly from their websites as well. Alternatively, you may also find phone numbers and email addresses for customer service in these areas. For immediate assistance, consider checking if there is a FAQ section on the site, as many common questions are addressed there.
+Faithfulness Score (Cosine Similarity): 0.7546032667160034
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.1125, recall=0.16981132075471697, fmeasure=0.13533834586466165)}
+Answer Relevance Score (between query and response): 0.8151016235351562
+Context Precision (Cosine Similarity): 0.7351701855659485
+Total Response Time: 14.06 seconds
+Query Processing Time: 14.06 seconds
+
+========================================
+Question 8: My discount coupon not working.
+========================================
+Number of Top Chunks Retrieved: 2
+Number of Filtered Top Chunks: 1
+Generated Response:  I'm sorry for the inconvenience you're experiencing. It seems that the discount coupon you have isn't being applied as expected. Here are a few steps you could try to resolve this issue:
+
+1. Check the validity of your coupon: Ensure it hasn't expired or been used already.
+2. Coupon code entry: Make sure you entered the coupon code correctly, without any extra spaces or special characters.
+3. Eligible items: Verify that the items in your cart are eligible for the discount. Some coupons only apply to specific products.
+4. Order total: Ensure your order total meets the minimum requirement (if any) for using this coupon.
+5. Browser cookies: Sometimes, clear your browser's cache and cookies as they might be causing issues with applying the coupon.
+6. Contact support: If none of the above solutions work, please reach out to our customer service team for further assistance. They will be more than happy to help you resolve this issue!
+Faithfulness Score (Cosine Similarity): 0.694861888885498
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.12883435582822086, recall=0.35, fmeasure=0.18834080717488788)}
+Answer Relevance Score (between query and response): 0.8090053796768188
+Context Precision (Cosine Similarity): 0.6104062795639038
+Total Response Time: 29.31 seconds
+Query Processing Time: 29.31 seconds
+
+========================================
+Question 9: Can I buy / make payment through installments?
+========================================
+Number of Top Chunks Retrieved: 2
+Number of Filtered Top Chunks: 1
+Generated Response:  Yes, purchasing items or making payments through installment plans is possible at many stores, both online and offline. This option allows you to pay for a larger amount over a specified period of time, usually with interest added. However, the availability of this service may depend on the merchant and your credit history. It's always a good idea to review the terms and conditions before agreeing to an installment plan to fully understand the associated costs and repayment schedule.
+Faithfulness Score (Cosine Similarity): 0.6962568759918213
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.1125, recall=0.19148936170212766, fmeasure=0.14173228346456693)}
+Answer Relevance Score (between query and response): 0.8174619674682617
+Context Precision (Cosine Similarity): 0.6447482109069824
+Total Response Time: 14.15 seconds
+Query Processing Time: 14.15 seconds
+
+========================================
+Question 10: Can you provide information about BSBI School in Berlin?
+========================================
+Number of Top Chunks Retrieved: 0
+Number of Filtered Top Chunks: 0
+Generated Response:  I'd be happy to help! BSBI Berlin School of Business and Innovation is a private higher education institution located in Berlin, Germany. It offers undergraduate and postgraduate programs in various fields such as Business Administration, Marketing, International Business, Finance, IT Management, and more. The school prides itself on small class sizes, providing students with personalized attention. BSBI aims to foster innovation, creativity, and entrepreneurship among its students by offering practical learning experiences and real-world case studies. The campus is centrally located in Berlin, offering easy access to the city's vibrant cultural, historical, and business scenes.
+Faithfulness Score (Cosine Similarity): 0.0
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0, recall=0, fmeasure=0)}
+Answer Relevance Score (between query and response): 0.7984579801559448
+Context Precision (Cosine Similarity): 0.0
+Total Response Time: 19.00 seconds
+Query Processing Time: 19.00 seconds
+
+########################################
+End of Iteration 3
+########################################

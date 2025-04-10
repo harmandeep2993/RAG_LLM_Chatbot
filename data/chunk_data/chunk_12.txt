@@ -1,1 +1,2 @@
-We have a price matching policy where we will match the price of an identical product found on a competitor's website. Please contact our customer support team with the details of the product and the competitor's offer. 
+Question: do you offer installment or payment plans?
+Answer: yes, we offer payment plans through third-party providers like cleartomorrow , paylater, which allow you to split your payments into manageable installments. you can select the installment payment option at checkout if it is available in your region.

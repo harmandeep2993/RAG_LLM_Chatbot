@@ -14,28 +14,55 @@ def extract_text_from_pdf(pdf_path):
     """
     all_text = ""
     
-    # Open the PDF file using pdfplumber
-    with pdfplumber.open(pdf_path) as pdf:
-        # Iterate through each page and extract text
-        for page_num, page in enumerate(pdf.pages):
-            text = page.extract_text()
-            if text:
-                all_text += text + "\n"
+    # Check if the file exists before proceeding
+    if not os.path.exists(pdf_path):
+        raise FileNotFoundError(f"The file {pdf_path} does not exist.")
     
-    return all_text
+    try:
+        # Open the PDF file using pdfplumber
+        with pdfplumber.open(pdf_path) as pdf:
+            # Iterate through each page and extract text
+            for page_num, page in enumerate(pdf.pages):
+                text = page.extract_text()
+                if text:  # Only add text if something was extracted
+                    all_text += text + "\n"
+                else:
+                    print(f"Warning: No text extracted from page {page_num + 1}.")
+    except Exception as e:
+        print(f"Error while processing the PDF: {e}")
+    
+    return all_text.strip()
 
 def save_extracted_text(text, output_file):
-    with open(output_file, "w", encoding="utf-8") as f:
-        f.write(text)
+    """
+    Saves the extracted text to a file.
+    
+    Args:
+        text (str): The text to be saved.
+        output_file (str): The output file path.
+    """
+    try:
+        with open(output_file, "w", encoding="utf-8") as f:
+            f.write(text)
+        print(f"Text successfully saved at {output_file}.")
+    except Exception as e:
+        print(f"Error while saving the text to file: {e}")
 
 if __name__ == "__main__":
-    # Step 1: Extract text from the PDF
-    pdf_text = extract_text_from_pdf(_0_config.FAQ_PDF_PATH)
-
-    # Step 2: Save the extracted text to a file in data/extracted_text
-    output_dir = _0_config.EXTRACT_TEXT_DATA_PATH
-    os.makedirs(output_dir, exist_ok=True)
-    output_file = os.path.join(output_dir, "extracted_faq.txt")
-    save_extracted_text(pdf_text, output_file)
-
-    print(f"Text extracted and saved at {output_file}.")
+    try:
+        # Step 1: Extract text from the PDF
+        pdf_text = extract_text_from_pdf(_0_config.FAQ_PDF_PATH)
+        
+        if pdf_text:
+            # Step 2: Save the extracted text to a file in data/extracted_text
+            output_dir = _0_config.EXTRACT_TEXT_DATA_PATH
+            os.makedirs(output_dir, exist_ok=True)
+            output_file = os.path.join(output_dir, "extracted_faq.txt")
+            save_extracted_text(pdf_text, output_file)
+        else:
+            print("No text was extracted from the PDF.")
+    
+    except FileNotFoundError as fnf_error:
+        print(fnf_error)
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")

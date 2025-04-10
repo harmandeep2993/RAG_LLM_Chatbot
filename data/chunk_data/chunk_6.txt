@@ -1,1 +1,2 @@
-Shipping times vary depending on the destination and the shipping method chosen. Standard shipping usually takes 3-5 business days, while express shipping can take 1-2 business days. 
+Question: can i order by phone?
+Answer: unfortunately, we do not accept orders over the phone. to ensure a smooth and secure transaction, please place your order through our website, where you can select your items, enter your payment information, and track your order easily. we encourage you to download our app, browse the products, and complete your purchase directly from your phone. this provides a convenient and secure way to order while on the go.

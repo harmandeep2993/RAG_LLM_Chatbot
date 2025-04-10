@@ -1,1 +1,2 @@
-Usually, only one promo code can be applied per order. During the checkout process, enter the promo code in the designated field to apply the discount to your order. 
+Question: do you have a mobile app for easier shopping?
+Answer: yes, we have a mobile app available for both android and ios devices. you can browse products, track orders, and complete purchases conveniently from your mobile device.

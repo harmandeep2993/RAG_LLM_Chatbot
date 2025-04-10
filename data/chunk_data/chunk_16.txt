@@ -1,1 +1,2 @@
-Yes, we have a loyalty program where you can earn points for every purchase. These points can be redeemed for discounts on future orders. Please visit our website to learn more and join the program. 
+Question: can i request a refund to a different payment method?
+Answer: refunds are typically issued to the original payment method used at the time of purchase. if your payment method is no longer valid, please contact our customer support team to discuss alternative refund options

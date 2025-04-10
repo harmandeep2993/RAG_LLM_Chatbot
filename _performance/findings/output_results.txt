@@ -1,0 +1,414 @@
+
+########################################
+Iteration 1
+########################################
+
+========================================
+Question 1: How can I create an account?
+========================================
+Number of Top Chunks Retrieved: 2
+Number of Filtered Top Chunks: 1
+Generated Response:  To create an account, please navigate to our website and find the 'sign up' button, usually located in the top right corner of the homepage. Upon clicking this button, you will be directed to a registration form where you will need to provide essential information such as your name, email address, and a secure password. After entering your details, you may be asked to verify your email address by clicking a confirmation link sent to your inbox. Once verified, you can complete the registration by following any additional prompts, such as selecting a username or setting up security questions. Following these steps will create your account, allowing you to access all the features and services available on our platform.
+Faithfulness Score (Cosine Similarity): 0.9738809466362
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.907563025210084, recall=0.8059701492537313, fmeasure=0.8537549407114625)}
+Answer Relevance Score (between query and response): 0.7839174270629883
+Context Precision (Cosine Similarity): 0.7375975847244263
+Total Response Time: 37.43 seconds
+Query Processing Time: 37.43 seconds
+
+========================================
+Question 2: How can I track my order?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  To track your order, log into your account using your credentials. Navigate to the 'order history' section in your account dashboard. Here, you will find a list of all your recent purchases. Select the specific order you wish to track, and you will see detailed information about its status. This includes a tracking number and a link to the courier’s tracking page. By clicking on this link, you can view real-time updates on the location and estimated delivery time of your shipment, keeping you informed about its progress from dispatch to delivery.
+Faithfulness Score (Cosine Similarity): 0.9819619655609131
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.9361702127659575, recall=0.7586206896551724, fmeasure=0.8380952380952381)}
+Answer Relevance Score (between query and response): 0.8068087100982666
+Context Precision (Cosine Similarity): 0.8200972676277161
+Total Response Time: 29.77 seconds
+Query Processing Time: 29.77 seconds
+
+========================================
+Question 3: How to cancel the order?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  To cancel your order, please log in to your account and navigate to the 'Purchase History' section. Look for the specific order you wish to cancel, and if it has not been shipped yet, you should see a cancellation option. Click on it, confirm your request, and the order will be cancelled. You will receive a confirmation and any payments made will be refunded accordingly. If you encounter any difficulties, feel free to reach out for further assistance.
+Faithfulness Score (Cosine Similarity): 0.9674838781356812
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.6794871794871795, recall=0.726027397260274, fmeasure=0.7019867549668874)}
+Answer Relevance Score (between query and response): 0.8609666228294373
+Context Precision (Cosine Similarity): 0.7815634608268738
+Total Response Time: 24.39 seconds
+Query Processing Time: 24.39 seconds
+
+========================================
+Question 4: How long does it take for items to be shipped?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  The duration for an item to be shipped depends on when you place your order and the shipping method chosen during checkout. Standard shipping usually takes between 3-5 business days, while express shipping options can deliver your order within 1-2 business days. Please note that delivery times may vary due to factors such as holidays, weekends, or unexpected delays, but we will always strive to provide the most accurate estimates for your convenience.
+Faithfulness Score (Cosine Similarity): 0.9587382674217224
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.6266666666666667, recall=0.6438356164383562, fmeasure=0.6351351351351352)}
+Answer Relevance Score (between query and response): 0.7569200992584229
+Context Precision (Cosine Similarity): 0.6921708583831787
+Total Response Time: 24.38 seconds
+Query Processing Time: 24.38 seconds
+
+========================================
+Question 5: Can I cancel my order if it is shipped?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  To cancel a shipped order, please contact our customer support team as soon as possible and provide them with your order details, including the order number. Our team will process the cancellation and confirm it with you. If the order has already moved to the 'delivering' status, you may need to wait for it to arrive and then follow our return process to send the item back. Any payment made will be refunded according to our refund policy.
+Faithfulness Score (Cosine Similarity): 0.8911604285240173
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.782051282051282, recall=0.46564885496183206, fmeasure=0.5837320574162679)}
+Answer Relevance Score (between query and response): 0.8121843338012695
+Context Precision (Cosine Similarity): 0.7818081378936768
+Total Response Time: 30.55 seconds
+Query Processing Time: 30.55 seconds
+
+========================================
+Question 6: What should I do if my package is lost during shipping?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  If your package is lost during shipping, please contact our customer support team immediately with your order details and a description of the issue. We will initiate an investigation with the shipping carrier and work towards resolving this problem as quickly as possible. Depending on the outcome, we will either replace the item, issue a refund, or offer another solution to address the loss.
+Faithfulness Score (Cosine Similarity): 0.8880341649055481
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.78125, recall=0.6493506493506493, fmeasure=0.7092198581560283)}
+Answer Relevance Score (between query and response): 0.8638260364532471
+Context Precision (Cosine Similarity): 0.7677186131477356
+Total Response Time: 20.81 seconds
+Query Processing Time: 20.81 seconds
+
+========================================
+Question 7: How can I reach to customer service?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  You can reach our customer service team by phone at 1800-444-8888, through email at support@e-commerceshophelp.com, or via the live chat feature on our website during business hours. We're here to assist you with any inquiries or issues you may have.
+Faithfulness Score (Cosine Similarity): 0.9465343356132507
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.8478260869565217, recall=0.7358490566037735, fmeasure=0.7878787878787878)}
+Answer Relevance Score (between query and response): 0.7137561440467834
+Context Precision (Cosine Similarity): 0.8403048515319824
+Total Response Time: 18.92 seconds
+Query Processing Time: 18.92 seconds
+
+========================================
+Question 8: My discount coupon not working.
+========================================
+Number of Top Chunks Retrieved: 2
+Number of Filtered Top Chunks: 1
+Generated Response:  If your discount coupon isn't working, I recommend checking the terms and conditions first to ensure that the code is still valid and applicable to your purchase. If everything appears correct but the code still doesn't apply, please don't hesitate to contact our customer support team for assistance in resolving the issue. We're here to help!
+Faithfulness Score (Cosine Similarity): 0.9028496146202087
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.75, recall=0.75, fmeasure=0.75)}
+Answer Relevance Score (between query and response): 0.8816514015197754
+Context Precision (Cosine Similarity): 0.7644356489181519
+Total Response Time: 18.43 seconds
+Query Processing Time: 18.43 seconds
+
+========================================
+Question 9: Can I buy / make payment through installments?
+========================================
+Number of Top Chunks Retrieved: 2
+Number of Filtered Top Chunks: 1
+Generated Response:  Absolutely! We provide payment plans through third-party providers such as Cleartomorrow and Paylater, enabling you to divide your payments into convenient installments. During the checkout process, simply select the installment option if it's available in your region. Enjoy the flexibility of paying for your purchases over time.
+Faithfulness Score (Cosine Similarity): 0.8724606037139893
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.5102040816326531, recall=0.5319148936170213, fmeasure=0.5208333333333334)}
+Answer Relevance Score (between query and response): 0.7679916620254517
+Context Precision (Cosine Similarity): 0.762073278427124
+Total Response Time: 18.11 seconds
+Query Processing Time: 18.11 seconds
+
+========================================
+Question 10: Can you provide information about BSBI School in Berlin?
+========================================
+Number of Top Chunks Retrieved: 0
+Number of Filtered Top Chunks: 0
+Generated Response: Sorry, I couldn't find any relevant information.
+Faithfulness Score (Cosine Similarity): 0.0
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': 0.0}
+Answer Relevance Score (between query and response): 0.0
+Context Precision (Cosine Similarity): 0.0
+Total Response Time: 0.10 seconds
+Query Processing Time: 0.10 seconds
+
+########################################
+End of Iteration 1
+########################################
+
+########################################
+Iteration 2
+########################################
+
+========================================
+Question 1: How can I create an account?
+========================================
+Number of Top Chunks Retrieved: 2
+Number of Filtered Top Chunks: 1
+Generated Response:  To create an account, please navigate to our website and locate the 'sign up' button, usually found in the top right corner of the homepage. Click on this button and you will be directed to a registration form where you'll need to provide your name, email address, and a secure password. You may also be asked to verify your email address by clicking a confirmation link sent to your inbox. Once verified, you can complete the registration by selecting a username or setting up security questions. After finishing these steps, your account will be created, allowing you access to all the features and services available on our platform.
+Faithfulness Score (Cosine Similarity): 0.978161633014679
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.926605504587156, recall=0.753731343283582, fmeasure=0.8312757201646089)}
+Answer Relevance Score (between query and response): 0.8002083897590637
+Context Precision (Cosine Similarity): 0.7446313500404358
+Total Response Time: 35.83 seconds
+Query Processing Time: 35.83 seconds
+
+========================================
+Question 2: How can I track my order?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  To track your order, please log into your account using your credentials and navigate to the 'order history' section, usually located in your account dashboard. Inside this section, you will find a list of all your recent purchases. Select the specific order you wish to track for detailed information about its status, including a tracking number and a link to the courier’s tracking page. By clicking on this link, you can monitor real-time updates on the location and estimated delivery time of your shipment, keeping you informed about its progress from dispatch to delivery.
+Faithfulness Score (Cosine Similarity): 0.9821410179138184
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.8854166666666666, recall=0.7327586206896551, fmeasure=0.8018867924528301)}
+Answer Relevance Score (between query and response): 0.8026907444000244
+Context Precision (Cosine Similarity): 0.8217945098876953
+Total Response Time: 29.68 seconds
+Query Processing Time: 29.68 seconds
+
+========================================
+Question 3: How to cancel the order?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  To cancel your order, please log into your account and navigate to the 'Purchase History' section. Find the order you wish to cancel and if it has not been shipped yet, you should see a cancellation option. Click on this, confirm your request, and the order will be cancelled. You'll receive a confirmation, and any payments made will be refunded. If you need further assistance, please let me know!
+Faithfulness Score (Cosine Similarity): 0.9619989395141602
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.7571428571428571, recall=0.726027397260274, fmeasure=0.7412587412587412)}
+Answer Relevance Score (between query and response): 0.8572608828544617
+Context Precision (Cosine Similarity): 0.7815871238708496
+Total Response Time: 20.51 seconds
+Query Processing Time: 20.51 seconds
+
+========================================
+Question 4: How long does it take for items to be shipped?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  For your convenience, we process orders as soon as possible after they are placed. However, the shipping times depend on your location and the shipping method selected during checkout. Standard shipping usually takes 3-5 business days for delivery, while express shipping options can expedite the process, delivering your order within 1-2 business days. Please note that delivery times may be affected by holidays, weekends, or unexpected delays. For the most accurate estimate on when your order will be shipped, please refer to the information provided at the time of checkout. We appreciate your patience and understanding as we work diligently to get your items to you in a timely manner.
+Faithfulness Score (Cosine Similarity): 0.9582844972610474
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.48214285714285715, recall=0.7397260273972602, fmeasure=0.5837837837837838)}
+Answer Relevance Score (between query and response): 0.73042231798172
+Context Precision (Cosine Similarity): 0.7259110808372498
+Total Response Time: 28.97 seconds
+Query Processing Time: 28.97 seconds
+
+========================================
+Question 5: Can I cancel my order if it is shipped?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  Yes, you can still attempt to cancel a shipped order. However, it's important to contact our customer support team as soon as possible, providing them with your order details including the order number. Our team will process the cancellation and confirm it with you. If the order has already moved to delivering status, you may need to wait for its arrival and then follow our return process to send the item back. Any payment made will be refunded according to our refund policy.
+Faithfulness Score (Cosine Similarity): 0.8726065754890442
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.7261904761904762, recall=0.46564885496183206, fmeasure=0.5674418604651164)}
+Answer Relevance Score (between query and response): 0.8117589354515076
+Context Precision (Cosine Similarity): 0.7823774814605713
+Total Response Time: 30.71 seconds
+Query Processing Time: 30.71 seconds
+
+========================================
+Question 6: What should I do if my package is lost during shipping?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  If your package is lost during shipping, please contact our customer support team immediately. Provide them with your order details and a description of the issue, so we can initiate an investigation with the shipping carrier. We will do our best to resolve the problem promptly and either replace the item or issue a refund, depending on the outcome of the investigation.
+Faithfulness Score (Cosine Similarity): 0.8657606840133667
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.6774193548387096, recall=0.5454545454545454, fmeasure=0.60431654676259)}
+Answer Relevance Score (between query and response): 0.8807092308998108
+Context Precision (Cosine Similarity): 0.744683563709259
+Total Response Time: 20.86 seconds
+Query Processing Time: 20.86 seconds
+
+========================================
+Question 7: How can I reach to customer service?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  You can get in touch with our customer service team by calling us at 1800-444-8888, sending an email to support@e-commerceshophelp.com, or using the live chat feature on our website during business hours. Our team is always ready to assist you with any questions or issues you might have.
+Faithfulness Score (Cosine Similarity): 0.9322633147239685
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.6037735849056604, recall=0.6037735849056604, fmeasure=0.6037735849056604)}
+Answer Relevance Score (between query and response): 0.7302666306495667
+Context Precision (Cosine Similarity): 0.8310933113098145
+Total Response Time: 20.48 seconds
+Query Processing Time: 20.48 seconds
+
+========================================
+Question 8: My discount coupon not working.
+========================================
+Number of Top Chunks Retrieved: 2
+Number of Filtered Top Chunks: 1
+Generated Response:  I'm sorry to hear that you're having trouble with your discount coupon. To help you resolve this issue, please ensure that the code is still valid and applicable to your purchase by checking its terms and conditions. If everything seems correct but the code isn't applying, don't hesitate to reach out to our customer support team for assistance. We're here to help!
+Faithfulness Score (Cosine Similarity): 0.8036835193634033
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.43283582089552236, recall=0.48333333333333334, fmeasure=0.45669291338582674)}
+Answer Relevance Score (between query and response): 0.8665180206298828
+Context Precision (Cosine Similarity): 0.6982569694519043
+Total Response Time: 19.50 seconds
+Query Processing Time: 19.50 seconds
+
+========================================
+Question 9: Can I buy / make payment through installments?
+========================================
+Number of Top Chunks Retrieved: 2
+Number of Filtered Top Chunks: 1
+Generated Response:  Absolutely! We do offer flexible payment options that include installment plans. You can choose to split your payments into manageable portions using third-party providers such as ClearTomorrow or PayLater. To avail this facility, simply select the installment payment option at the checkout if it's available in your region.
+Faithfulness Score (Cosine Similarity): 0.9016976952552795
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.48, recall=0.5106382978723404, fmeasure=0.49484536082474223)}
+Answer Relevance Score (between query and response): 0.7941210269927979
+Context Precision (Cosine Similarity): 0.7611451148986816
+Total Response Time: 17.31 seconds
+Query Processing Time: 17.31 seconds
+
+========================================
+Question 10: Can you provide information about BSBI School in Berlin?
+========================================
+Number of Top Chunks Retrieved: 0
+Number of Filtered Top Chunks: 0
+Generated Response: Sorry, I couldn't find any relevant information.
+Faithfulness Score (Cosine Similarity): 0.0
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': 0.0}
+Answer Relevance Score (between query and response): 0.0
+Context Precision (Cosine Similarity): 0.0
+Total Response Time: 0.03 seconds
+Query Processing Time: 0.03 seconds
+
+########################################
+End of Iteration 2
+########################################
+
+########################################
+Iteration 3
+########################################
+
+========================================
+Question 1: How can I create an account?
+========================================
+Number of Top Chunks Retrieved: 2
+Number of Filtered Top Chunks: 1
+Generated Response:  To create an account, please navigate to our website and look for the 'sign up' button, usually located in the top right corner of the homepage. Click on this button, and you will be directed to a registration form where you will provide your name, email address, and a secure password. After filling out these details, you may need to verify your email address by clicking a confirmation link sent to your inbox. Once verified, complete the registration process by selecting a username or setting up security questions, if required. After following these steps, your account will be created, and you can access all the features and services on our platform.
+Faithfulness Score (Cosine Similarity): 0.9762544631958008
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.8648648648648649, recall=0.7164179104477612, fmeasure=0.7836734693877551)}
+Answer Relevance Score (between query and response): 0.7927003502845764
+Context Precision (Cosine Similarity): 0.7367684245109558
+Total Response Time: 35.34 seconds
+Query Processing Time: 35.34 seconds
+
+========================================
+Question 2: How can I track my order?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  To track your order, please log into your account using your credentials. Navigate to the 'order history' section in your account dashboard. In this area, you will find a list of all your recent purchases. Select the specific order you wish to track, and you will see detailed information about its status. This includes a tracking number and a link to the courier’s tracking page. By clicking on this link, you can view real-time updates on the location and estimated delivery time of your shipment, ensuring you stay informed about its progress from dispatch to delivery.
+Faithfulness Score (Cosine Similarity): 0.9812138676643372
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.9285714285714286, recall=0.7844827586206896, fmeasure=0.8504672897196262)}
+Answer Relevance Score (between query and response): 0.8010008931159973
+Context Precision (Cosine Similarity): 0.8204042315483093
+Total Response Time: 29.54 seconds
+Query Processing Time: 29.54 seconds
+
+========================================
+Question 3: How to cancel the order?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  To cancel your order, kindly log into your account and navigate to the 'Purchase History' section. Look for the specific order you wish to cancel and if it hasn't been shipped yet, you should see a cancellation option. Click on that, confirm your request, and the order will be cancelled. You'll receive a confirmation, and any payments made will be refunded accordingly. If you need further assistance, please let me know!
+Faithfulness Score (Cosine Similarity): 0.9524886012077332
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.684931506849315, recall=0.684931506849315, fmeasure=0.684931506849315)}
+Answer Relevance Score (between query and response): 0.8576521277427673
+Context Precision (Cosine Similarity): 0.7760360240936279
+Total Response Time: 22.27 seconds
+Query Processing Time: 22.27 seconds
+
+========================================
+Question 4: How long does it take for items to be shipped?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  The shipping duration depends on the chosen method during checkout. Standard shipping usually takes 3-5 business days for delivery, while express options can expedite the process, delivering your order within 1-2 business days. Please note that these estimates may vary based on holidays, weekends, or unforeseen delays, but we strive to provide accurate information at the time of your order.
+Faithfulness Score (Cosine Similarity): 0.9756142497062683
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.7903225806451613, recall=0.6712328767123288, fmeasure=0.725925925925926)}
+Answer Relevance Score (between query and response): 0.693938136100769
+Context Precision (Cosine Similarity): 0.6950104832649231
+Total Response Time: 21.77 seconds
+Query Processing Time: 21.77 seconds
+
+========================================
+Question 5: Can I cancel my order if it is shipped?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  To cancel a shipped order, you should contact our customer support team immediately with your order details, including the order number. Our team will process the cancellation and confirm it with you. Please note that if the order has already entered the delivering status, you will need to wait for it to arrive and then follow our return process to send the item back. Any payment made will be refunded according to our refund policy.
+Faithfulness Score (Cosine Similarity): 0.8982764482498169
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.7866666666666666, recall=0.45038167938931295, fmeasure=0.5728155339805825)}
+Answer Relevance Score (between query and response): 0.7973659038543701
+Context Precision (Cosine Similarity): 0.7879242300987244
+Total Response Time: 26.03 seconds
+Query Processing Time: 26.03 seconds
+
+========================================
+Question 6: What should I do if my package is lost during shipping?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  If your package is lost during shipping, please contact our customer support team immediately. They will need your order details and a description of the issue so we can initiate an investigation with the shipping carrier. Based on the outcome, we will either replace the item, issue a refund, or suggest another solution to resolve the problem promptly.
+Faithfulness Score (Cosine Similarity): 0.8602340221405029
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.8448275862068966, recall=0.6363636363636364, fmeasure=0.7259259259259259)}
+Answer Relevance Score (between query and response): 0.8834381103515625
+Context Precision (Cosine Similarity): 0.7460694313049316
+Total Response Time: 19.01 seconds
+Query Processing Time: 19.01 seconds
+
+========================================
+Question 7: How can I reach to customer service?
+========================================
+Number of Top Chunks Retrieved: 3
+Number of Filtered Top Chunks: 1
+Generated Response:  To contact our Customer Service team, you can reach us via phone at 1800-444-8888, by email at support@e-commerceshophelp.com, or through the live chat feature on our website during business hours. We are here to assist with any inquiries or issues you may have.
+Faithfulness Score (Cosine Similarity): 0.9586868286132812
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.875, recall=0.7924528301886793, fmeasure=0.8316831683168316)}
+Answer Relevance Score (between query and response): 0.7127349376678467
+Context Precision (Cosine Similarity): 0.8526117205619812
+Total Response Time: 19.07 seconds
+Query Processing Time: 19.07 seconds
+
+========================================
+Question 8: My discount coupon not working.
+========================================
+Number of Top Chunks Retrieved: 2
+Number of Filtered Top Chunks: 1
+Generated Response:  I'm sorry to hear that you're having trouble with your discount coupon. Please verify if the code is still valid and applicable to your purchase by checking its terms and conditions. If everything seems correct, but the code isn't applying, don't hesitate to reach out to our customer support team for assistance in resolving the issue. We're here to help!
+Faithfulness Score (Cosine Similarity): 0.8062306642532349
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.47692307692307695, recall=0.5166666666666667, fmeasure=0.4960000000000001)}
+Answer Relevance Score (between query and response): 0.8623781204223633
+Context Precision (Cosine Similarity): 0.6958816051483154
+Total Response Time: 18.88 seconds
+Query Processing Time: 18.88 seconds
+
+========================================
+Question 9: Can I buy / make payment through installments?
+========================================
+Number of Top Chunks Retrieved: 2
+Number of Filtered Top Chunks: 1
+Generated Response:  Yes, indeed! We provide the convenience of flexible payment plans through trusted third-party providers such as Cleartomorrow and Paylater. These services enable you to break down your payments into more manageable installments at checkout. However, please note that availability may depend on your region. If it's an option in your area, simply select the installment payment method during the checkout process, and we'll take care of the rest!
+Faithfulness Score (Cosine Similarity): 0.8717348575592041
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': Score(precision=0.323943661971831, recall=0.48936170212765956, fmeasure=0.38983050847457634)}
+Answer Relevance Score (between query and response): 0.7109243869781494
+Context Precision (Cosine Similarity): 0.7512549161911011
+Total Response Time: 20.86 seconds
+Query Processing Time: 20.86 seconds
+
+========================================
+Question 10: Can you provide information about BSBI School in Berlin?
+========================================
+Number of Top Chunks Retrieved: 0
+Number of Filtered Top Chunks: 0
+Generated Response: Sorry, I couldn't find any relevant information.
+Faithfulness Score (Cosine Similarity): 0.0
+Faithfulness Evaluation (ROUGE Scores - ROUGE-L): {'rougeL': 0.0}
+Answer Relevance Score (between query and response): 0.0
+Context Precision (Cosine Similarity): 0.0
+Total Response Time: 0.11 seconds
+Query Processing Time: 0.11 seconds
+
+########################################
+End of Iteration 3
+########################################

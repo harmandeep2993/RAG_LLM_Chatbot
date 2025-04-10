@@ -1,1 +1,2 @@
-Yes, you can return a product purchased with store credit. The refund will be issued in the form of store credit, which you can use for future purchases. 
+Question: can i request a product if it is not currently available in my size?
+Answer: if your preferred size is temporarily out of stock, you can sign up for size availability notifications. once the size is restocked, you will receive an email alert. this allows you to purchase the item as soon as it becomes available again.

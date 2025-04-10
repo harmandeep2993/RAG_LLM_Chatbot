@@ -1,1 +1,2 @@
-Yes, you can return a product purchased with a gift card. The refund will be issued in the form of store credit or a new gift card. 
+Question: can i order a product that is out of stock?
+Answer: if a product is out of stock, you will typically see an option to sign up for restock notifications on the product page. by entering your e-mail, you'll be alerted as soon as the item becomes available again. this ensures you don’t miss out once the product is back in stock.

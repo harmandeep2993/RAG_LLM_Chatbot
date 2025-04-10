@@ -1,0 +1,11 @@
+Questions,Faithfulness Cosine (with RAG),Faithfulness Cosine (without RAG),Faithfulness ROUGE-L (with RAG),Faithfulness ROUGE-L (without RAG),Answer Relevancy (with RAG),Answer Relevancy (without RAG),Context Precision (with RAG),Context Precision (without RAG),Response Time (with RAG),Response Time (without RAG)
+Q01,0.98,0.91,0.82,0.3,0.79,0.8,0.74,0.69,36.2,22.98
+Q02,0.98,0.84,0.83,0.23,0.8,0.81,0.82,0.75,29.66,15.45
+Q03,0.96,0.92,0.71,0.24,0.86,0.85,0.78,0.76,22.39,18.5
+Q04,0.96,0.79,0.65,0.26,0.73,0.72,0.7,0.54,25.04,16.45
+Q05,0.89,0.77,0.57,0.16,0.81,0.8,0.78,0.7,29.1,14.81
+Q06,0.87,0.79,0.68,0.21,0.88,0.85,0.75,0.69,20.23,22.37
+Q07,0.95,0.74,0.74,0.2,0.72,0.8,0.84,0.72,19.49,12.65
+Q08,0.84,0.72,0.57,0.24,0.87,0.82,0.72,0.64,18.94,21.61
+Q09,0.88,0.73,0.47,0.14,0.76,0.81,0.76,0.65,18.76,15.61
+Q10,0,0,0,0,0,0.78,0,0,0.08,20.21

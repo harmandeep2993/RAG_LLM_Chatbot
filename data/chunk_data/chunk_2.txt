@@ -1,1 +1,2 @@
-We accept major credit cards, debit cards, and PayPal as payment methods for online orders. 
+Question: what payment methods do you accept?
+Answer: we offer a variety of convenient payment options to ensure a smooth transaction process for online orders. you can use all major credit cards, including visa, mastercard and as well as debit cards that are linked to these payment networks. in addition to card payments, we also accept paypal, which allows you to make secure payments directly from your paypal balance, linked bank account, or associated credit cards.
