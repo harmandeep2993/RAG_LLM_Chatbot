@@ -4,18 +4,18 @@ import faiss
 import numpy as np
 from sentence_transformers import SentenceTransformer
 import ollama
-import _0_config
+import config
 from sklearn.metrics.pairwise import cosine_similarity  # For cosine similarity
 from rouge_score import rouge_scorer  # For ROUGE score
 
 
 # Load the sentence-transformers embedding model
-embedder = SentenceTransformer(_0_config.EMBEDDING_MODEL)
+embedder = SentenceTransformer(config.EMBEDDING_MODEL)
 
 # Load FAISS index in memory
 faiss_index_cache = None
 
-def load_faiss_index(index_path=_0_config.VECTOR_STORE_PATH):
+def load_faiss_index(index_path=config.VECTOR_STORE_PATH):
     """
     Loads the FAISS index from the specified file path. Caches the index in memory.
     """
@@ -24,7 +24,7 @@ def load_faiss_index(index_path=_0_config.VECTOR_STORE_PATH):
         faiss_index_cache = faiss.read_index(index_path)
     return faiss_index_cache
 
-def load_combined_question_answer_texts(chunk_dir=_0_config.CHUNK_DATA_PATH):
+def load_combined_question_answer_texts(chunk_dir=config.CHUNK_DATA_PATH):
     """
     Loads the combined question-answer texts from the specified directory.
 
@@ -92,7 +92,7 @@ def generate_response_without_context(query):
     """
 
     # Use Ollama to generate the response using only the query
-    response = ollama.generate(model=_0_config.MODEL_NAME, prompt=prompt)
+    response = ollama.generate(model=config.MODEL_NAME, prompt=prompt)
     
     # Return the generated response
     return response['response']

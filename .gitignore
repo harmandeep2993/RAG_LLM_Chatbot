@@ -1,12 +1,21 @@
 # Ignore Python virtual environment
 envrn/
+venv/
+.venv/
 
 # Ignore log files
 *.log
 
 # Ignore cache or temporary files
 __pycache__/
+*.pyc
 *.tmp
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore environment variables
+.env
 
 # Ignore OS-specific files
 .DS_Store

@@ -1,6 +1,6 @@
 import os
 import pdfplumber
-import _0_config
+import config
 
 def extract_text_from_pdf(pdf_path):
     """
@@ -51,11 +51,11 @@ def save_extracted_text(text, output_file):
 if __name__ == "__main__":
     try:
         # Step 1: Extract text from the PDF
-        pdf_text = extract_text_from_pdf(_0_config.FAQ_PDF_PATH)
+        pdf_text = extract_text_from_pdf(config.FAQ_PDF_PATH)
         
         if pdf_text:
             # Step 2: Save the extracted text to a file in data/extracted_text
-            output_dir = _0_config.EXTRACT_TEXT_DATA_PATH
+            output_dir = config.EXTRACT_TEXT_DATA_PATH
             os.makedirs(output_dir, exist_ok=True)
             output_file = os.path.join(output_dir, "extracted_faq.txt")
             save_extracted_text(pdf_text, output_file)

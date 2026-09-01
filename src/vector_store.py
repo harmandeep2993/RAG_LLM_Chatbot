@@ -2,13 +2,13 @@
 import os
 import faiss
 import numpy as np
-import _0_config
+import config
 from sentence_transformers import SentenceTransformer
 
 # Load the sentence-transformers embedding model
-embedder = SentenceTransformer(_0_config.EMBEDDING_MODEL)
+embedder = SentenceTransformer(config.EMBEDDING_MODEL)
 
-def load_combined_question_answer_texts(chunk_dir=_0_config.CHUNK_DATA_PATH):
+def load_combined_question_answer_texts(chunk_dir=config.CHUNK_DATA_PATH):
     """
     Loads the text chunks (combined question-answer pairs) from the specified directory.
     
@@ -75,7 +75,7 @@ def create_faiss_index(embeddings):
         raise Exception(f"Error creating FAISS index: {e}")
     return index
 
-def save_faiss_index(index, index_path=_0_config.VECTOR_STORE_PATH):
+def save_faiss_index(index, index_path=config.VECTOR_STORE_PATH):
     """
     Saves the FAISS index to the specified file path.
     
@@ -115,7 +115,7 @@ if __name__ == "__main__":
     try:
         index = create_faiss_index(embeddings)
         save_faiss_index(index)
-        print(f"FAISS index created and saved at {_0_config.VECTOR_STORE_PATH}")
+        print(f"FAISS index created and saved at {config.VECTOR_STORE_PATH}")
     except Exception as e:
         print(f"Error creating or saving FAISS index: {e}")
         exit(1)

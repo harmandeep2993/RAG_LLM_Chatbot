@@ -21,17 +21,17 @@ measurably improves answer quality over a plain LLM baseline.
 
 **Ingestion pipeline (run once, or whenever the source document changes):**
 
-1. `scripts/_1_pdf_processor.py` - extracts raw text from the FAQ PDF with `pdfplumber`
-2. `scripts/_2_chunker.py` - cleans the text and splits it into individual
+1. `src/pdf_processor.py` - extracts raw text from the FAQ PDF with `pdfplumber`
+2. `src/chunker.py` - cleans the text and splits it into individual
    question-answer chunks using the PDF's own numbered structure (regex-based,
    not fixed-size chunking)
-3. `scripts/_3_vector_store.py` - embeds each chunk with
+3. `src/vector_store.py` - embeds each chunk with
    `sentence-transformers/multi-qa-mpnet-base-dot-v1` and writes the vectors
    into a FAISS index
 
 **Query pipeline (per user request):**
 
-4. `scripts/_4_query_handler.py`:
+4. `src/query_handler.py`:
    - embeds the user's query with the same embedding model
    - retrieves the top-k nearest chunks from the FAISS index, filtered by a
      distance threshold
@@ -39,7 +39,7 @@ measurably improves answer quality over a plain LLM baseline.
    - builds a prompt from the filtered context and the user's question
    - generates the final answer with Mistral via Ollama (fully local, no
      external API calls)
-5. `scripts/_gui_new.py` - Streamlit chat interface, launched via `main.py`
+5. `src/app.py` - Streamlit chat interface, launched via `main.py`
 
 ```
 FAQ PDF -> pdfplumber -> clean & chunk (Q&A pairs) -> sentence-transformers
@@ -85,20 +85,20 @@ pip install ollama
 # 3. (Optional) Rebuild the knowledge base - only needed if you change the
 #    source PDF or chunking logic. The repo already ships a prebuilt index
 #    and chunk files under data/ and vector_store/.
-python scripts/_1_pdf_processor.py
-python scripts/_2_chunker.py
-python scripts/_3_vector_store.py
+python src/pdf_processor.py
+python src/chunker.py
+python src/vector_store.py
 
 # 4. Launch the chatbot
 python main.py
 ```
 
-`main.py` runs `streamlit run scripts/_gui_new.py`, which opens the chat UI
-in your browser.
+`main.py` runs `streamlit run src/app.py`, which opens the chat UI in your
+browser.
 
 ## Configuration
 
-All paths and model names are centralized in `scripts/_0_config.py`:
+All paths and model names are centralized in `src/config.py`:
 
 - `FAQ_PDF_PATH` - source FAQ PDF
 - `EXTRACT_TEXT_DATA_PATH`, `CHUNK_DATA_PATH`, `VECTOR_STORE_PATH` - pipeline artifact locations
@@ -107,10 +107,9 @@ All paths and model names are centralized in `scripts/_0_config.py`:
 
 ## Evaluation
 
-`_performance/` contains a separate evaluation harness that runs the RAG
-pipeline and a non-RAG baseline (plain Mistral, no retrieval) over the same
-set of 10 representative FAQ questions across 3 iterations, then compares
-them on:
+`evaluation/` contains a separate harness that runs the RAG pipeline and a
+non-RAG baseline (plain Mistral, no retrieval) over the same set of 10
+representative FAQ questions across 3 iterations, then compares them on:
 
 - **Faithfulness (cosine similarity)** - how closely the generated answer
   aligns with the retrieved context
@@ -140,7 +139,7 @@ RAG produced significantly more grounded, source-faithful answers than the
 non-RAG baseline. Answer relevance did not improve significantly with RAG -
 a plain LLM can sound just as on-topic even when its answer isn't grounded
 in any real source, which is exactly the failure mode RAG is meant to guard
-against. Full per-question output is in `_performance/findings/`.
+against. Full per-question output is in `evaluation/findings/`.
 
 ## Known limitations
 
@@ -173,21 +172,29 @@ against. Full per-question output is in `_performance/findings/`.
 
 ```
 .
-|-- main.py                  Entry point - launches the Streamlit app
-|-- scripts/
-|   |-- _0_config.py         Paths and model configuration
-|   |-- _1_pdf_processor.py  PDF text extraction
-|   |-- _2_chunker.py        Text cleaning and Q&A chunking
-|   |-- _3_vector_store.py   Embedding and FAISS index creation
-|   |-- _4_query_handler.py  Retrieval, filtering, and answer generation
-|   `-- _gui_new.py          Streamlit chat UI
+|-- main.py                    Entry point - launches the Streamlit app
+|-- src/
+|   |-- config.py              Paths and model configuration
+|   |-- pdf_processor.py       PDF text extraction
+|   |-- chunker.py             Text cleaning and Q&A chunking
+|   |-- vector_store.py        Embedding and FAISS index creation
+|   |-- query_handler.py       Retrieval, filtering, and answer generation
+|   `-- app.py                 Streamlit chat UI
 |-- data/
-|   |-- raw/                 Source FAQ PDF
-|   |-- extracted_text/      Extracted plain text
-|   `-- chunk_data/          Individual Q&A chunks
-|-- vector_store/            Prebuilt FAISS index
-|-- _performance/            RAG vs. non-RAG evaluation harness and results
-`-- extras/                  Earlier/alternate GUI prototype
+|   |-- raw/                   Source FAQ PDF
+|   |-- extracted_text/        Extracted plain text
+|   `-- chunk_data/            Individual Q&A chunks
+|-- vector_store/              Prebuilt FAISS index
+|-- evaluation/                RAG vs. non-RAG evaluation harness
+|   |-- config.py              Evaluation-side configuration
+|   |-- evaluate_rag.py        RAG pipeline evaluation run
+|   |-- evaluate_baseline.py   Non-RAG baseline evaluation run
+|   |-- baseline_app.py        Standalone plain-Mistral demo (no retrieval)
+|   |-- stats_tests.py         Paired significance testing
+|   |-- notebooks/             Exploratory data analysis notebooks
+|   |-- results/               Aggregated metrics, CSVs, and comparison plots
+|   `-- findings/              Raw per-question output and normality/variance tests
+`-- archive/                   Earlier prototype GUI, kept for reference
 ```
 
 ## License

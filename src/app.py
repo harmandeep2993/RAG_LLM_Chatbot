@@ -1,6 +1,6 @@
 import streamlit as st
 import time  # To calculate response time
-from _4_query_handler import get_helpbee_response
+from query_handler import get_helpbee_response
 
 def process_input():
     """

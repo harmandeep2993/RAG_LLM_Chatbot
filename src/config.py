@@ -1,4 +1,4 @@
-# _0_config.py
+# config.py
 
 # Path to the PDF containing FAQ data
 FAQ_PDF_PATH = "data/raw/Miscellaneous Frequent Question and Answers (F&Q).pdf"

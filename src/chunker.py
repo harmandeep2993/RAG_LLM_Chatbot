@@ -1,8 +1,8 @@
-#_2_chunker.py
+# chunker.py
 import re
 import os
-from _1_pdf_processor import extract_text_from_pdf
-import _0_config
+from pdf_processor import extract_text_from_pdf
+import config
 
 def clean_text(text):
     """
@@ -47,7 +47,7 @@ def chunk_text_by_question_answer(text):
     
     return answers, questions
 
-def save_chunks_with_metadata(chunks, questions, output_dir=_0_config.CHUNK_DATA_PATH):
+def save_chunks_with_metadata(chunks, questions, output_dir=config.CHUNK_DATA_PATH):
     """
     Saves the question-answer chunks into individual text files in the specified directory.
     
@@ -80,7 +80,7 @@ def save_chunks_with_metadata(chunks, questions, output_dir=_0_config.CHUNK_DATA
 if __name__ == "__main__":
     try:
         # Step 1: Extract the text from the PDF
-        pdf_text = extract_text_from_pdf(_0_config.FAQ_PDF_PATH)
+        pdf_text = extract_text_from_pdf(config.FAQ_PDF_PATH)
 
         if not pdf_text:
             print("Error: No text extracted from PDF.")
