@@ -1,10 +1,14 @@
 # Helpbee
 
+**Master's thesis project: "HELPBEE: Leveraging AI and Retrieval-Augmented
+Generation (RAG) for Enhanced Customer Support Efficiency"**
+
 Helpbee is a local, retrieval-augmented generation (RAG) chatbot that answers
 customer FAQ questions grounded in a source document, using a locally hosted
-LLM (Mistral, served via Ollama) instead of a cloud API. It was built as a
-Master's thesis project to study whether retrieval-augmented generation
-measurably improves answer quality over a plain LLM baseline.
+LLM (Mistral, served via Ollama) instead of a cloud API. It was built to
+study whether retrieval-augmented generation measurably improves customer
+support answer quality over a plain LLM baseline, and to test that claim
+with a proper statistical evaluation rather than anecdotal comparison.
 
 ## What it does
 
